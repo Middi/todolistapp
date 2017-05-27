@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".delete-article").on("click",function(t){$target=$(t.target);const e=$target.attr("data-id");$.ajax({type:"DELETE",url:"/article/"+e,success:function(t){alert("Deleting Article"),window.location.href="/"},error:function(t){console.log(t)}})}),$(".table-row").click(function(){window.document.location=$(this).data("href")})});

@@ -31,11 +31,22 @@
     margin: 0 auto;
 }
 
+.table-row {
+    cursor: pointer;
+    cursor: hand;
+    &:hover {
+        text-decoration: underline;
+    }
+}
 
-
-.td-height-2 {
+.td-body {
     min-height: 60px;
 }
+
+.table-hover > tbody > tr:hover {
+    background-color: white;
+}
+
 
 // ---- Footer ---- //
 footer {

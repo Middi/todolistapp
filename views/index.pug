@@ -8,13 +8,11 @@ block content
             th Author
                 tbody
                     each article, i in articles
-                        tr
+                        tr.table-row(data-href="/article/" +article._id)
                             td
-                                h5
-                                    a(href="/article/" +article._id)= article.title
+                                h5= article.title
                             td
-                                h5
-                                    a(href="/article/" +article._id)= article.author
+                                h5= article.author
                         tr
-                            td(colspan=2).td-height-2
+                            td(colspan=2).td-body
                                 p= article.body

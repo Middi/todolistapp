@@ -124,8 +124,17 @@ a {
   max-width: 800px;
   margin: 0 auto; }
 
-.td-height-2 {
+.table-row {
+  cursor: pointer;
+  cursor: hand; }
+  .table-row:hover {
+    text-decoration: underline; }
+
+.td-body {
   min-height: 60px; }
+
+.table-hover > tbody > tr:hover {
+  background-color: white; }
 
 footer {
   right: 0;
