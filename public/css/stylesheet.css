@@ -2,8 +2,7 @@ html {
   font-size: 12px; }
 
 body {
-  font-family: 'Open Sans';
-  line-height: 1.2; }
+  font-family: 'Open Sans'; }
 
 h1,
 h2,
@@ -39,8 +38,8 @@ h4 {
   font-weight: 300;
   padding: 14px 30px; }
 
-p {
-  font-size: 2em; }
+h5 {
+  font-weight: 600; }
 
 a {
   color: #262626; }
@@ -105,6 +104,15 @@ a {
 
 .navbar-default {
   background-color: #d80060; }
+
+.navbar-default .navbar-nav > li > a {
+  color: whitesmoke; }
+
+table {
+  border: 1px solid rgba(72, 72, 72, 0.4); }
+
+.td-height-2 {
+  min-height: 60px; }
 
 footer {
   right: 0;

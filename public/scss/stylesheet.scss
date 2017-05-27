@@ -7,6 +7,25 @@
     background-color: $brand;
 }
 
+.navbar-default .navbar-nav > li > a {
+    color: $white;
+}
+
+table {
+    border: 1px solid $grey;
+}
+
+.td-height-2 {
+    min-height: 60px;
+}
+
+.title-class {
+}
+
+.author-class {
+
+}
+
 // ---- Footer ---- //
 footer {
     right: 0;

@@ -2,8 +2,19 @@ extends layout
 
 block content
     h1 #{title}
-    table.table.table-bordered.table-striped.table-hover
-        each article, i in articles
-            tr
-                td
-                    a(href="/article/" +article._id)= article.title
+    table.table.table-striped.table-hover
+        thead
+            th Article
+            th Author
+                tbody
+                    each article, i in articles
+                        tr
+                            td
+                                h5
+                                    a(href="/article/" +article._id)= article.title
+                            td
+                                h5
+                                    a(href="/article/" +article._id)= article.author
+                        tr
+                            td(colspan=2).td-height-2
+                                p= article.body
