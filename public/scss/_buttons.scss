@@ -1,0 +1,113 @@
+button {
+    border: none;
+    background: none;
+    color: $black;
+    margin: 70px 0 20px 0;
+    font-size: 1.4rem;
+    padding: 12px 14px;
+    border-radius: 1px;
+    border: 1px solid $black;
+    transition: all 0.5s ease;
+    &:hover {
+        background: darken($white, 6)
+    }
+    &:active {
+        background: darken($white, 6);
+        transform: scale(0.96);
+    }
+}
+
+.game-button {
+    width: 295px;
+    height: 295px;
+    border: 10px solid $black;
+    transition: all 0.2s ease;
+}
+
+.green {
+    border-top-left-radius: 100%;
+    background: $green;
+    &:hover {
+        background: saturate(lighten($green, 10), 60);
+    }
+}
+
+.green-active {
+    background: saturate(lighten($green, 10), 60);
+}
+
+.red {
+    border-top-right-radius: 100%;
+    background: $red;
+    &:hover {
+        background: saturate(lighten($red, 10), 60);
+    }
+}
+
+.red-active {
+    background: saturate(lighten($red, 10), 60);
+}
+
+.yellow {
+    border-bottom-left-radius: 100%;
+    background: $yellow;
+    &:hover {
+        background: saturate(lighten($yellow, 10), 60);
+    }
+}
+
+.yellow-active {
+    background: saturate(lighten($yellow, 10), 60);
+}
+
+.blue {
+    border-bottom-right-radius: 100%;
+    background: $blue;
+    &:hover {
+        background: saturate(lighten($blue, 16), 60);
+    }
+}
+
+.blue-active {
+    background: saturate(lighten($blue, 16), 60);
+}
+
+#label-con {
+    padding: 4px 0 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+label {
+    margin: 2px 12px 0;
+    font-size: 1rem;
+}
+
+#btn-con {
+    padding: 2px 0 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+.buttons {
+    height: 36px;
+    width: 36px;
+    border: 3px solid $d-border;
+    margin: 0 10px 8px;
+    border-radius: 100%;
+}
+
+#btn1,
+#btn3 {
+    background: $yellow;
+    &:hover {
+        background: saturate($yellow, 20);
+    }
+}
+
+#btn2 {
+    background: $red;
+    &:hover {
+        background: lighten(saturate($red, 50), 7);
+    }
+}

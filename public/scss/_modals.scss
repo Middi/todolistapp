@@ -1,0 +1,54 @@
+#modal-bg {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: $black-bg;
+    z-index: 2;
+}
+
+#winner, #start {
+    width: 500px;
+    height: 380px;
+    position: absolute;
+    margin: auto;
+    top: -80px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: $white;
+    color: $black;
+    border: 1px solid $black;
+    text-align: center;
+    padding: 120px;
+    z-index: 10;
+}
+
+#start {
+    padding: 60px;
+}
+
+#X, #O, #one, #two {
+    margin: 30px 10px;
+    cursor: pointer;
+    cursor: hand;
+	transition: all 0.4s ease;
+    &:hover {background: $silver}
+    &:active {background: darken($silver, 5)}
+}
+
+.close {
+    position: absolute;
+    top: 6px;
+    right: 10px;
+    cursor: pointer;
+    cursor: hand;
+}
+
+.hidden {
+    display: none;
+}
+

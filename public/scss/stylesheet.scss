@@ -1,0 +1,54 @@
+@import "colors";
+@import "typography";
+@import "modals";
+@import "buttons";
+
+.navbar {
+    background-color: $brand;
+}
+
+
+
+// ---- Footer ---- //
+footer {
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    width: 100%;
+    display: table;
+    text-align: center;
+    position: fixed;
+    background: $brand;
+}
+
+.built {
+    color: white;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+// ---- Footer Styles ---- //
+footer p {
+    font-size: 1em;
+}
+
+.built a,
+strong {
+    font-weight: 500;
+    &:hover {
+        text-decoration: underline
+    }
+}
+
+.fa-heart {
+    font-size: 12px;
+    color: #fc2d23;
+}
+
+.fa-free-code-camp {
+    padding: 0 5px 0 0;
+    color: white;
+}
+
+@import "media-queries";
