@@ -2,7 +2,8 @@ extends layout
 
 block content
     h1 #{title}
-    ul.list-group
+    table.table.table-bordered.table-striped.table-hover
         each article, i in articles
-            li.list-group-item
-                a(href="/article/" +article._id)= article.title
+            tr
+                td
+                    a(href="/article/" +article._id)= article.title
