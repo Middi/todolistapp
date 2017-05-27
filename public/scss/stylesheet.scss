@@ -25,9 +25,13 @@
     color: $white;
 }
 
-table {
+.table {
     border: 1px solid $grey;
+    max-width: 800px;
+    margin: 0 auto;
 }
+
+
 
 .td-height-2 {
     min-height: 60px;

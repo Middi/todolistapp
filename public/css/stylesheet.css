@@ -119,8 +119,10 @@ a {
 .navbar-default .navbar-nav > li > a, .navbar-default .navbar-brand {
   color: whitesmoke; }
 
-table {
-  border: 1px solid rgba(72, 72, 72, 0.4); }
+.table {
+  border: 1px solid rgba(72, 72, 72, 0.4);
+  max-width: 800px;
+  margin: 0 auto; }
 
 .td-height-2 {
   min-height: 60px; }
