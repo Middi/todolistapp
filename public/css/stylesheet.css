@@ -102,10 +102,21 @@ a {
   border: 1px solid #262626;
   transition: all 0.5s ease; }
 
-.navbar-default {
-  background-color: #d80060; }
+.navbar {
+  background-color: #d80060;
+  border: none; }
 
-.navbar-default .navbar-nav > li > a {
+.navbar.navbar-default {
+  border: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+
+.navbar.navbar-default .navbar-collapse {
+  border: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+
+.navbar-default .navbar-nav > li > a, .navbar-default .navbar-brand {
   color: whitesmoke; }
 
 table {
