@@ -1,15 +1,142 @@
-.btn {
-    margin: 10px;
-    font-size: 1.4rem;
-    padding: 12px 14px;
-    border-radius: 4px;
-    border: 1px solid $black;
-    transition: all 0.5s ease;
-    // &:hover {
-    //     background: darken($white, 6)
-    // }
-    // &:active {
-    //     background: darken($white, 6);
-    //     transform: scale(0.96);
-    // }
-}
+/*=============================================
+=                 FORM STYLES                 =
+=============================================*/
+
+  
+  .toggle-all {
+     height: 40px;
+     min-width: 40px;
+     margin: 0;
+     padding: 0;
+     background-color: inherit;
+     border: none;
+     border-top: 0.5px solid $grey;
+     border-bottom: 0.5px solid $grey;
+     border-left: 0.5px solid $grey;
+     float: left;
+
+     &:hover {background-color: darken($white, 5%);}
+ }
+ 
+ .add-todo {
+     height: 40px;
+     max-width: 480px;
+     padding: 0;
+     margin: 10px auto;
+     display: flex;
+ }
+ 
+ #addTodoTextInput {
+     width: 400px;
+     height: 40px;
+     margin: 0;
+     padding: 14px;
+     border: 0.5px solid $grey;
+     -webkit-appearance: none;
+     font-size: 1.2em;
+     font-family: "Open Sans";
+     font-weight: 400;
+     color: $brand;
+     float: left;
+     flex-shrink: 1;
+     border-radius: 0;
+ }
+ 
+ #add-button {
+     height: 40px;
+     min-width: 42px;
+     margin: 0;
+     padding: 0;
+     background-color: inherit;
+     border: none;
+     border-top: 0.5px solid $grey;
+     border-bottom: 0.5px solid $grey;
+     border-right: 0.5px solid $grey;
+     float: right;
+     transition: all 0.4s ease;
+
+     &:hover {background-color: darken($white, 5%);}
+ }
+ 
+ .todos {
+     margin: 60px 0;
+ }
+
+ ul {
+     list-style: none;
+ }
+ 
+ li {
+     height: 80px;
+     max-width: 500px;
+     padding-left: 50px;
+     background-color: white;
+     font-size: 1em;
+     font-family: "Open Sans";
+     font-weight: 400;
+     margin: 6px auto;
+     line-height: 80px;
+     text-align: left;
+     clear: both;
+     border: 1px solid #ddd;
+     cursor: pointer;
+     box-shadow: 4px 2px 2px 0 $shadow, 0 6px 16px 0 $shadow;
+ }
+ 
+ .editButton {
+     height: 39px;
+     width: 40px;
+     background-color: rgba( $white, 0);
+     border: 0.5px solid $grey;
+     float: right;
+     z-index: 1;
+     transition: all 0.4s ease;
+     margin: 18px 0;
+     font-size: 1rem;
+
+     &:hover {background-color: darken($white, 5%);}
+ }
+ 
+ .deleteButton {
+     height: 39px;
+     width: 40px;
+     background-color: rgba( $white, 0);
+     border: 0.5px solid $grey;
+     float: right;
+     transition: all 0.4s ease;
+     margin: 18px 6px 15px 0;
+     font-size: 1rem;
+
+     &:hover {background-color: darken($white, 5%);}
+ }
+ 
+ #changeTodoPositionInput {width: 40px;}
+ 
+ // Input styles
+ input:focus,
+ input[type]:focus,
+ textarea:focus {
+     outline: none;
+     border: 1px solid $brand !important;
+ }
+ 
+ input:hover::-webkit-input-placeholder,
+ {
+     color: $grey;
+     transition: all 0.6s ease;
+ }
+ 
+ input:hover:-moz-placeholder {
+     color: $grey;
+     transition: all 0.6s ease;
+ }
+ 
+ input:hover::-moz-placeholder {
+     color: $grey;
+     transition: all 0.6s ease;
+ }
+ 
+ input:hover:-ms-input-placeholder {
+     color: $grey;
+     transition: all 0.6s ease;
+ }

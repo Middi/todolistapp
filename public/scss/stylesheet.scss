@@ -3,6 +3,15 @@
 @import "modals";
 @import "buttons";
 
+*  {
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    }
+
+a {text-decoration: none;}
+
 .navbar {
     background-color: $brand;
     border: none;
@@ -25,26 +34,34 @@
     color: $white;
 }
 
-.table {
-    border: 1px solid $grey;
-    max-width: 800px;
-    margin: 0 auto;
+
+.container-main  {
+    max-width       : 920px;
+    height          : 100vh;
+    margin          : 100px auto;
+    padding         : 20px 0;
+    text-align      : center;
 }
 
-.table-row {
-    cursor: pointer;
-    cursor: hand;
-    &:hover {
-        text-decoration: underline;
-    }
-}
 
-.td-body {
-    min-height: 60px;
-}
-
-.table-hover > tbody > tr:hover {
+#todo-section {
+    margin          : 0 auto;
+    height          : auto;
+    width           : 600px;
+    padding         : 30px 0 60px 0;
     background-color: white;
+    border          : 1px solid #ddd;
+    cursor          : pointer;
+    box-shadow      : 0 4px 8px 0 $shadow, 0 6px 16px 0 $shadow;
+}
+
+
+#edit-section {
+    margin-top      : 50px;
+}
+
+.center {
+    text-align: center;
 }
 
 

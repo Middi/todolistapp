@@ -1,48 +1,58 @@
-html {
-  font-size: 12px; }
+/*=============================================
+=                 TYPOGRAPHY                  =
+=============================================*/
+* {
+  color: #262626;
+  font-family: "Open Sans"; }
 
-body {
-  font-family: 'Open Sans'; }
-
-h1,
-h2,
-h3,
-h4 {
-  font-family: 'Open Sans';
-  font-weight: 700;
-  color: #262626; }
-
-h1 {
-  font-size: 2.2em;
+p {
+  font-family: "Open Sans";
+  font-size: 0.75em;
+  line-height: 1.2;
   font-weight: 300; }
 
-h1 span {
-  font-weight: 700;
+h1 {
+  font-size: 1.5em;
+  font-family: "Open Sans";
+  font-weight: 200;
   color: whitesmoke; }
+  h1 span {
+    color: #262626;
+    font-weight: 700; }
 
 h2 {
-  text-align: center;
-  font-size: 5.5em;
-  font-weight: 900;
-  padding-top: 4px;
-  margin-top: 0px;
-  color: #c3c3c3;
-  line-height: 0.9; }
-
-h3 {
-  font-size: 8em;
-  padding: 34px 50px; }
-
-h4 {
-  font-size: 4em;
-  font-weight: 300;
-  padding: 14px 30px; }
-
-h5 {
-  font-weight: 600; }
+  font-size: 1.5em;
+  font-family: "Open Sans";
+  font-weight: 200;
+  color: #262626;
+  padding-bottom: 20px;
+  text-align: center; }
+  h2 span {
+    color: #262626;
+    font-weight: 700; }
 
 a {
+  font-size: 1em;
   color: #262626; }
+
+a:hover {
+  text-decoration: underline;
+  color: #262626; }
+
+.built a,
+strong {
+  padding: 0;
+  margin: 0;
+  color: white;
+  text-decoration: none;
+  transition: all 0.6s ease; }
+
+i {
+  color: #262626; }
+
+.fa-heart {
+  font-size: 12px;
+  color: #fc2d23; }
 
 #modal-bg {
   width: 100vw;
@@ -94,13 +104,140 @@ a {
 .hidden {
   display: none; }
 
-.btn {
-  margin: 10px;
-  font-size: 1.4rem;
-  padding: 12px 14px;
-  border-radius: 4px;
-  border: 1px solid #262626;
-  transition: all 0.5s ease; }
+/*=============================================
+=                 FORM STYLES                 =
+=============================================*/
+.toggle-all {
+  height: 40px;
+  min-width: 40px;
+  margin: 0;
+  padding: 0;
+  background-color: inherit;
+  border: none;
+  border-top: 0.5px solid rgba(72, 72, 72, 0.4);
+  border-bottom: 0.5px solid rgba(72, 72, 72, 0.4);
+  border-left: 0.5px solid rgba(72, 72, 72, 0.4);
+  float: left; }
+  .toggle-all:hover {
+    background-color: #e8e8e8; }
+
+.add-todo {
+  height: 40px;
+  max-width: 480px;
+  padding: 0;
+  margin: 10px auto;
+  display: flex; }
+
+#addTodoTextInput {
+  width: 400px;
+  height: 40px;
+  margin: 0;
+  padding: 14px;
+  border: 0.5px solid rgba(72, 72, 72, 0.4);
+  -webkit-appearance: none;
+  font-size: 1.2em;
+  font-family: "Open Sans";
+  font-weight: 400;
+  color: #d80060;
+  float: left;
+  flex-shrink: 1;
+  border-radius: 0; }
+
+#add-button {
+  height: 40px;
+  min-width: 42px;
+  margin: 0;
+  padding: 0;
+  background-color: inherit;
+  border: none;
+  border-top: 0.5px solid rgba(72, 72, 72, 0.4);
+  border-bottom: 0.5px solid rgba(72, 72, 72, 0.4);
+  border-right: 0.5px solid rgba(72, 72, 72, 0.4);
+  float: right;
+  transition: all 0.4s ease; }
+  #add-button:hover {
+    background-color: #e8e8e8; }
+
+.todos {
+  margin: 60px 0; }
+
+ul {
+  list-style: none; }
+
+li {
+  height: 80px;
+  max-width: 500px;
+  padding-left: 50px;
+  background-color: white;
+  font-size: 1em;
+  font-family: "Open Sans";
+  font-weight: 400;
+  margin: 6px auto;
+  line-height: 80px;
+  text-align: left;
+  clear: both;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  box-shadow: 4px 2px 2px 0 rgba(99, 99, 99, 0.3), 0 6px 16px 0 rgba(99, 99, 99, 0.3); }
+
+.editButton {
+  height: 39px;
+  width: 40px;
+  background-color: rgba(245, 245, 245, 0);
+  border: 0.5px solid rgba(72, 72, 72, 0.4);
+  float: right;
+  z-index: 1;
+  transition: all 0.4s ease;
+  margin: 18px 0;
+  font-size: 1rem; }
+  .editButton:hover {
+    background-color: #e8e8e8; }
+
+.deleteButton {
+  height: 39px;
+  width: 40px;
+  background-color: rgba(245, 245, 245, 0);
+  border: 0.5px solid rgba(72, 72, 72, 0.4);
+  float: right;
+  transition: all 0.4s ease;
+  margin: 18px 6px 15px 0;
+  font-size: 1rem; }
+  .deleteButton:hover {
+    background-color: #e8e8e8; }
+
+#changeTodoPositionInput {
+  width: 40px; }
+
+input:focus,
+input[type]:focus,
+textarea:focus {
+  outline: none;
+  border: 1px solid #d80060 !important; }
+
+input:hover::-webkit-input-placeholder {
+  color: rgba(72, 72, 72, 0.4);
+  transition: all 0.6s ease; }
+
+input:hover:-moz-placeholder {
+  color: rgba(72, 72, 72, 0.4);
+  transition: all 0.6s ease; }
+
+input:hover::-moz-placeholder {
+  color: rgba(72, 72, 72, 0.4);
+  transition: all 0.6s ease; }
+
+input:hover:-ms-input-placeholder {
+  color: rgba(72, 72, 72, 0.4);
+  transition: all 0.6s ease; }
+
+* {
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+a {
+  text-decoration: none; }
 
 .navbar {
   background-color: #d80060;
@@ -119,22 +256,28 @@ a {
 .navbar-default .navbar-nav > li > a, .navbar-default .navbar-brand {
   color: whitesmoke; }
 
-.table {
-  border: 1px solid rgba(72, 72, 72, 0.4);
-  max-width: 800px;
-  margin: 0 auto; }
+.container-main {
+  max-width: 920px;
+  height: 100vh;
+  margin: 100px auto;
+  padding: 20px 0;
+  text-align: center; }
 
-.table-row {
+#todo-section {
+  margin: 0 auto;
+  height: auto;
+  width: 600px;
+  padding: 30px 0 60px 0;
+  background-color: white;
+  border: 1px solid #ddd;
   cursor: pointer;
-  cursor: hand; }
-  .table-row:hover {
-    text-decoration: underline; }
+  box-shadow: 0 4px 8px 0 rgba(99, 99, 99, 0.3), 0 6px 16px 0 rgba(99, 99, 99, 0.3); }
 
-.td-body {
-  min-height: 60px; }
+#edit-section {
+  margin-top: 50px; }
 
-.table-hover > tbody > tr:hover {
-  background-color: white; }
+.center {
+  text-align: center; }
 
 footer {
   right: 0;

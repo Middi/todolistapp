@@ -1,20 +1,13 @@
 extends layout
 
 block content
-    h1 #{title}
-    table.table.table-striped.table-hover
-        thead
-            th Article
-            th Author
-                tbody
+    div.todos
+        h1 #{title}
+            ul
+                li
+                    a(href="/articles/add/").center Add Note
                     each article, i in articles
-                        tr.table-row(data-href="/article/" +article._id)
-                            td
-                                h5= article.title
-                            td
-                                h5= article.author
-                        tr
-                            td(colspan=2).td-body
-                                p= article.body 
-                                a.btn.btn-default(href='/article/edit/' +article._id) Edit
-                                a.btn.btn-danger.delete-article(href='#', data-id=article._id) Delete
+                        li
+                            a(href="/article/" +article._id)= article.title
+                            a.deleteButton.delete-article(href='#', data-id=article._id) X
+                            a.editButton(href='/article/edit/' +article._id) Edit

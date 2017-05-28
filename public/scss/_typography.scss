@@ -1,64 +1,69 @@
-// --------------------------------------------------
-// Typography
-// --------------------------------------------------
-//--------------------------------
-// Sets Default Font Size
-//--------------------------------
-html {
-    font-size: 12px
-}
+/*=============================================
+=                 TYPOGRAPHY                  =
+=============================================*/
 
-body {
-    font-family: 'Open Sans';
-}
 
-//--------------------------------
-// Headings
-//--------------------------------
-h1,
-h2,
-h3,
-h4 {
-    font-family: 'Open Sans';
-    font-weight: 700;
+* {
     color: $black;
+    font-family: "Open Sans";
+}
+
+p {
+    font-family: "Open Sans";
+    font-size: 0.75em;
+    line-height: 1.2;
+    font-weight: 300;
 }
 
 h1 {
-    font-size: 2.2em;
-    font-weight: 300;
-}
-
-h1 span {
-    font-weight: 700;
+    font-size: 1.5em;
+    font-family: "Open Sans";
+    font-weight: 200;
     color: $white;
+    span {
+        color: $black;
+        font-weight: 700;
+    }
 }
 
 h2 {
+    font-size: 1.5em;
+    font-family: "Open Sans";
+    font-weight: 200;
+    color: $black;
+    padding-bottom: 20px;
     text-align: center;
-    font-size: 5.5em;
-    font-weight: 900;
-    padding-top: 4px;
-    margin-top: 0px;
-    color: $silver-text;
-    line-height: 0.9;
-}
-
-h3 {
-    font-size: 8em;
-    padding: 34px 50px;
-}
-
-h4 {
-    font-size: 4em;
-    font-weight: 300;
-    padding: 14px 30px;
-}
-
-h5 {
-    font-weight: 600;
+    span {
+        color: $black;
+        font-weight: 700;
+    }
 }
 
 a {
+    font-size: 1em;
     color: $black;
+}
+
+
+a:hover {
+    text-decoration: underline;
+    color: $black;
+    }
+
+.built a,
+strong {
+    padding: 0;
+    margin: 0;
+    color: white;
+    text-decoration: none;
+    transition: all 0.6s ease;
+}
+
+
+// FONTAWESOME STYLES
+i {color: $black;}
+
+.fa-heart {
+    font-size: 12px;
+    color: $button;
 }
