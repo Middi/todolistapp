@@ -12,27 +12,39 @@
 
 a {text-decoration: none;}
 
-.navbar {
-    background-color: $brand;
-    border: none;
+header {
+    height          : 56px;
+    width           : 100%;
+    background      : $brand;
+    border-bottom   : 1px solid #bbb;
+    box-shadow      : 0 2px 6px -4px #999;
+    position        : fixed;
+    top             : 0;
+    z-index         : 10;
 }
 
-.navbar.navbar-default {
-    border: 0;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-}
-
-.navbar.navbar-default .navbar-collapse {
-    border: 0;
-    -webkit-box-shadow: none;
-    box-shadow: none;
+nav {
+    max-width       : 920px;
+    height          : 56px;
+    margin          : 0 auto;
+    padding         : 0 26px;
+    display         : flex;
+    justify-content : center;
 }
 
 
-.navbar-default .navbar-nav > li > a, .navbar-default .navbar-brand {
-    color: $white;
+.logo { align-self  : center; }
+
+// --- CONTENT AREA --- //
+main {
+    margin-top: 60px;
+    margin-bottom   : -32px;
 }
+
+main:after {
+    display         : block;
+}
+
 
 
 .container-main  {
