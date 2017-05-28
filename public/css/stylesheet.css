@@ -245,7 +245,7 @@ li {
     background-color: #e8e8e8;
     text-decoration: none; }
 
-.deleteButton {
+.deleteButton, .addButton {
   height: 39px;
   width: 40px;
   line-height: 38px;
@@ -256,9 +256,18 @@ li {
   transition: all 0.4s ease;
   margin: 18px 10px 15px 0;
   font-size: 1rem; }
-  .deleteButton:hover {
+  .deleteButton:hover, .addButton:hover {
     background-color: #e8e8e8;
     text-decoration: none; }
+
+.addButton {
+  border: 0.5px solid whitesmoke; }
+  .addButton:hover .fa-plus {
+    color: #d80060;
+    border-color: #d80060; }
+
+.fa-plus {
+  color: whitesmoke; }
 
 #changeTodoPositionInput {
   width: 40px; }

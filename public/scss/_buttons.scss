@@ -119,7 +119,7 @@
          }
  }
  
- .deleteButton {
+ .deleteButton, .addButton {
      height: 39px;
      width: 40px;
      line-height: 38px;
@@ -136,6 +136,18 @@
          text-decoration: none;
          }
  }
+
+ .addButton {
+    border: 0.5px solid $white;  
+    &:hover .fa-plus {
+              color: $brand;
+              border-color: $brand;
+         }
+}
+
+.fa-plus {
+    color: $white;
+}
  
  #changeTodoPositionInput {width: 40px;}
  
