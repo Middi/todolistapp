@@ -221,7 +221,6 @@ li {
   transition: all 0.5s ease;
   box-shadow: 4px 2px 2px 0 rgba(99, 99, 99, 0.3), 0 6px 16px 0 rgba(99, 99, 99, 0.3); }
   li:hover {
-    background-color: #f2f2f2;
     transform: scale(1.01); }
 
 .top-li {

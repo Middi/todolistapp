@@ -10,5 +10,6 @@ block content
                         i.fa.fa-plus(aria-hidden='true')
             ul
                 each article, i in articles
-                    li(data-id="/article/" +article._id)= article.title
+                    li(data-id="/article/" +article._id)
+                        a(data-id="/article/" +article._id)= article.title
                         a.editButton(href='/article/edit/' +article._id) Edit

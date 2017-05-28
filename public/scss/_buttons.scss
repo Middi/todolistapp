@@ -86,7 +86,6 @@
      box-shadow: 4px 2px 2px 0 $shadow, 0 6px 16px 0 $shadow;
 
      &:hover {
-        background-color: darken($white, 1%);
         transform: scale(1.01);
          }
  }
