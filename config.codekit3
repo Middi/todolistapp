@@ -3429,6 +3429,15 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"\/public\/js\/main-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/public\/js\/main-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
 	"\/public\/js\/main.js": {
 		"ft": 64,
 		"mi": 1,
@@ -3490,6 +3499,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/public\/scss\/_normalise.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/public\/scss\/_normalise.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/public\/scss\/_typography.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -3535,7 +3557,7 @@
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
-	"alwaysUseExternalServer": 0,
+	"alwaysUseExternalServer": 1,
 	"animateCSSInjections": 1,
 	"autoBuildNewItems": 1,
 	"autoprefixerBrowserString": "> 1%, last 2 versions, Firefox ESR, Opera 12.1",
@@ -4889,7 +4911,7 @@
 			}
 		},
 	"esLintSourceType": 0,
-	"externalServerAddress": "http:\/\/localhost:8888",
+	"externalServerAddress": "http:\/\/127.0.0.1:3000",
 	"gitIgnoreBuildFolder": 1,
 	"hideConfigFile": 0,
 	"jsCheckerReservedNamesString": "",

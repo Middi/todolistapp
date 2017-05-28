@@ -1,3 +1,4 @@
+@import "normalise";
 @import "colors";
 @import "typography";
 @import "modals";
@@ -72,8 +73,10 @@ main:after {
     margin-top      : 50px;
 }
 
-.center {
+.top-li {
     text-align: center;
+    background-color: $brand;
+    a {color: $white}
 }
 
 

@@ -4,10 +4,11 @@ block content
     div.todos
         h1 #{title}
             ul
-                li
-                    a(href="/articles/add/").center Add Note
-                    each article, i in articles
-                        li
-                            a(href="/article/" +article._id)= article.title
-                            a.deleteButton.delete-article(href='#', data-id=article._id) X
-                            a.editButton(href='/article/edit/' +article._id) Edit
+                li.top-li
+                    a(href="/articles/add/") Add Note
+                    a.deleteButton(href='/articles/add/')
+                        i.fa.fa-plus(aria-hidden='true')
+            ul
+                each article, i in articles
+                    li(data-id="/article/" +article._id)= article.title
+                        a.editButton(href='/article/edit/' +article._id) Edit
