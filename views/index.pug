@@ -5,11 +5,10 @@ block content
         h1 #{title}
             ul
                 li.top-li
-                    a(href="/articles/add/") Add Note
                     a.addButton(href='/articles/add/')
                         i.fa.fa-plus(aria-hidden='true')
-            ul
-                each article, i in articles
+            ul#articles-ul
+                each article, i in articles.reverse()
                     li(data-id="/article/" +article._id)
                         a(data-id="/article/" +article._id)= article.title
-                        a.editButton(href='/article/edit/' +article._id) Edit
+                        p(data-id="/article/" +article._id)= article.body

@@ -2,6 +2,8 @@ const express = require('express');
 const path = require('path');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
+const moment = require('moment');
+
 
 mongoose.connect('mongodb://localhost/nodekb');
 let db = mongoose.connection;
@@ -54,8 +56,11 @@ app.get('/', function (req, res) {
 // Get single Article
 app.get('/article/:id', function(req, res){
     Article.findById(req.params.id, function(err, article){
+        //set date format
+        var date = moment(article.date).format('MMMM Do YYYY');
         res.render('article', {
-            article: article
+            article: article,
+            date: date
         });
     });
 });
@@ -73,6 +78,7 @@ app.post('/articles/add', function(req, res){
     article.title = req.body.title;
     article.author = req.body.author;
     article.body = req.body.body;
+    article.date = new Date();
     article.save(function(err){
         if(err){
             console.log(err);
@@ -124,7 +130,7 @@ app.delete('/article/:id', function(req, res){
             console.log(err);
         }
         res.send('Success');
-    })
+    });
 });
 
 // Start Server

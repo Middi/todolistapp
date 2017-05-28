@@ -50,13 +50,15 @@ input, select {
 
 p {
   font-family: "Open Sans";
-  font-weight: 300; }
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.4; }
 
 h1 {
   font-size: 1.5em;
   font-family: "Open Sans";
   font-weight: 200;
-  color: whitesmoke; }
+  color: #fbfbfb; }
   h1 span {
     color: #262626;
     font-weight: 700; }
@@ -115,7 +117,7 @@ i {
   bottom: 0;
   left: 0;
   right: 0;
-  background: whitesmoke;
+  background: #fbfbfb;
   color: #262626;
   border: 1px solid #262626;
   text-align: center;
@@ -160,7 +162,7 @@ i {
   border-left: 0.5px solid rgba(72, 72, 72, 0.4);
   float: left; }
   .toggle-all:hover {
-    background-color: #e8e8e8; }
+    background-color: #eeeeee; }
 
 .add-todo {
   height: 40px;
@@ -179,7 +181,7 @@ i {
   font-size: 1.2em;
   font-family: "Open Sans";
   font-weight: 400;
-  color: #d80060;
+  color: #5995f0;
   float: left;
   flex-shrink: 1;
   border-radius: 0; }
@@ -197,19 +199,20 @@ i {
   float: right;
   transition: all 0.4s ease; }
   #add-button:hover {
-    background-color: #e8e8e8;
+    background-color: #eeeeee;
     text-decoration: none; }
 
 .todos {
   margin: 60px 0; }
 
 ul {
-  list-style: none; }
+  list-style: none;
+  margin-bottom: 20px; }
 
 li {
-  height: 80px;
+  height: auto;
   max-width: 500px;
-  padding-left: 50px;
+  padding: 0 20px 32px;
   background-color: white;
   font-size: 1em;
   font-family: "Open Sans";
@@ -219,56 +222,69 @@ li {
   clear: both;
   border: 1px solid #ddd;
   cursor: pointer;
-  transition: all 0.5s ease;
+  transition: all 0.4s ease;
   box-shadow: 4px 2px 2px 0 rgba(99, 99, 99, 0.3), 0 6px 16px 0 rgba(99, 99, 99, 0.3); }
   li:hover {
-    transform: scale(1.01); }
+    transform: scale(1.006); }
+
+#articles-ul {
+  margin-bottom: 200px; }
 
 .top-li {
-  border: 1px solid #d80060; }
+  border: 1px solid #5995f0;
+  text-align: center;
+  line-height: 76px;
+  padding: 0 20px;
+  transition: all 0.3s ease; }
   .top-li:hover {
-    background-color: #d80060;
+    background-color: #5995f0;
     transform: none; }
+  .top-li:active {
+    transform: scale(0.99); }
 
 .editButton {
   height: 39px;
   width: 40px;
   line-height: 38px;
-  background-color: rgba(245, 245, 245, 0);
+  background-color: rgba(251, 251, 251, 0);
   border: 0.5px solid rgba(72, 72, 72, 0.4);
   float: right;
   z-index: 1;
   transition: all 0.4s ease;
-  margin: 18px 10px 15px 0;
+  margin: 18px 10px;
   text-align: center;
   font-size: 1rem; }
   .editButton:hover {
-    background-color: #e8e8e8;
+    background-color: #eeeeee;
     text-decoration: none; }
 
 .deleteButton, .addButton {
   height: 39px;
   width: 40px;
   line-height: 38px;
-  background-color: rgba(245, 245, 245, 0);
+  background-color: rgba(251, 251, 251, 0);
   border: 0.5px solid rgba(72, 72, 72, 0.4);
   float: right;
   text-align: center;
   transition: all 0.4s ease;
-  margin: 18px 10px 15px 0;
+  margin: 18px 10px;
   font-size: 1rem; }
   .deleteButton:hover, .addButton:hover {
-    background-color: #e8e8e8;
+    background-color: #eeeeee;
     text-decoration: none; }
 
 .addButton {
-  border: 0.5px solid whitesmoke; }
+  border: 0.5px solid #fbfbfb;
+  border-radius: 100%;
+  margin: 0;
+  float: none;
+  padding: 12px 17px; }
   .addButton:hover .fa-plus {
-    color: #d80060;
-    border-color: #d80060; }
+    color: #5995f0;
+    border-color: #5995f0; }
 
 .fa-plus {
-  color: whitesmoke; }
+  color: #fbfbfb; }
 
 #changeTodoPositionInput {
   width: 40px; }
@@ -277,7 +293,7 @@ input:focus,
 input[type]:focus,
 textarea:focus {
   outline: none;
-  border: 1px solid #d80060 !important; }
+  border: 1px solid #5995f0 !important; }
 
 input:hover::-webkit-input-placeholder {
   color: rgba(72, 72, 72, 0.4);
@@ -307,7 +323,7 @@ a {
 header {
   height: 56px;
   width: 100%;
-  background: #d80060;
+  background: #5995f0;
   border-bottom: 1px solid #bbb;
   box-shadow: 0 2px 6px -4px #999;
   position: fixed;
@@ -354,9 +370,9 @@ main:after {
 
 .top-li {
   text-align: center;
-  background-color: #d80060; }
+  background-color: #5995f0; }
   .top-li a {
-    color: whitesmoke; }
+    color: #fbfbfb; }
 
 footer {
   right: 0;
@@ -367,7 +383,7 @@ footer {
   display: table;
   text-align: center;
   position: fixed;
-  background: #d80060; }
+  background: #5995f0; }
 
 .built {
   color: white;

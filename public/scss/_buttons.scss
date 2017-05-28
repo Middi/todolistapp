@@ -67,12 +67,13 @@
 
  ul {
      list-style: none;
+     margin-bottom: 20px;
  }
  
  li {
-     height: 80px;
+     height: auto;
      max-width: 500px;
-     padding-left: 50px;
+     padding: 0 20px 32px;
      background-color: white;
      font-size: 1em;
      font-family: "Open Sans";
@@ -82,20 +83,31 @@
      clear: both;
      border: 1px solid #ddd;
      cursor: pointer;
-     transition: all 0.5s ease;
+     transition: all 0.4s ease;
      box-shadow: 4px 2px 2px 0 $shadow, 0 6px 16px 0 $shadow;
 
      &:hover {
-        transform: scale(1.01);
+        //  box-shadow: 4px 2px 8px 2px $shadow, 0 6px 16px 2px $shadow;
+        transform: scale(1.006);
          }
  }
-
+#articles-ul {
+     margin-bottom: 200px;
+}
  .top-li {
      border: 1px solid $brand;
+     text-align: center; 
+     line-height: 76px;
+     padding: 0 20px;
+     transition: all 0.3s ease;
      
      &:hover {
         background-color: $brand;
         transform: none;
+         }
+
+     &:active {
+         transform: scale(0.99);
          }
      
  }
@@ -109,7 +121,7 @@
      float: right;
      z-index: 1;
      transition: all 0.4s ease;
-     margin: 18px 10px 15px 0;
+     margin: 18px 10px;
      text-align: center;
      font-size: 1rem;
 
@@ -128,7 +140,7 @@
      float: right;
      text-align: center;
      transition: all 0.4s ease;
-     margin: 18px 10px 15px 0;
+     margin: 18px 10px;
      font-size: 1rem;
 
           &:hover {
@@ -138,7 +150,12 @@
  }
 
  .addButton {
-    border: 0.5px solid $white;  
+    border: 0.5px solid $white;
+     border-radius: 100%;
+     margin: 0;
+     float: none;
+     padding: 12px 17px;
+
     &:hover .fa-plus {
               color: $brand;
               border-color: $brand;
