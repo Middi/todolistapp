@@ -3,9 +3,9 @@ const path = require('path');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const moment = require('moment');
-var port = process.env.PORT || 8080;
+var port = process.env.PORT || 3000;
 
-mongoose.connect('mongodb://localhost/nodekb');
+mongoose.connect('mongodb://middi:youandme123@ds151651.mlab.com:51651/nodekb');
 let dbb = mongoose.connection;
 
 // Check Connection
