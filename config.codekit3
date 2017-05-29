@@ -3443,6 +3443,17 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"\/public\/images\/star.png": {
+		"ft": 32768,
+		"iS": 8701,
+		"oA": 0,
+		"oAP": "\/public\/images\/star.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"\/public\/js\/main-min.js": {
 		"ft": 64,
 		"mi": 1,

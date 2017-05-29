@@ -36,11 +36,6 @@ table {
 a {
   text-decoration: none; }
 
-input, select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none; }
-
 /*=============================================
 =                 TYPOGRAPHY                  =
 =============================================*/
@@ -406,6 +401,12 @@ main {
 textarea, input {
   font-size: 1.1rem !important;
   line-height: 1.38 !important; }
+
+.fave {
+  background: url("/images/star.png");
+  background-position: top 5px right 5px;
+  background-size: 45px 45px;
+  background-repeat: no-repeat; }
 
 footer {
   height: 30px;

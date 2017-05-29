@@ -11,4 +11,8 @@ block content
                 label Body:
                 textarea.form-control(name='body' rows='10')= article.body
             br
+            .checkbox
+                label
+                    input(type="checkbox", name="check", value="false" onclick="$(this).attr('value', this.checked ? 1 : 0)")
+                    |  Favourite?
             input.btn.btn-primary(type='submit',value='Submit')

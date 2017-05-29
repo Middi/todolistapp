@@ -78,6 +78,7 @@ app.post('/articles/add', function(req, res){
     article.title = req.body.title;
     article.body = req.body.body;
     article.date = moment();
+    article.fave = req.body.check;
     article.save(function(err){
         if(err){
             console.log(err);
@@ -105,6 +106,8 @@ app.post('/articles/edit/:id', function(req, res){
     let article = {};
     article.title = req.body.title;
     article.body = req.body.body;
+    article.date = moment();
+    article.fave = req.body.check;
 
     let query = {_id:req.params.id};
 

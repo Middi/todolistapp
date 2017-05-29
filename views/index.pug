@@ -7,12 +7,22 @@ block content
                 a.addButton(href='/articles/add/') +
         div#articles-ul
             each article, i in articles.reverse()
-                div.child(data-id="/article/" +article._id)
-                    div.inner(data-id="/article/" +article._id)
-                        a(data-id="/article/" +article._id)= article.title
-                        p(data-id="/article/" +article._id)!= article.body.replace(/\n/g, '<br />').substring(0, 400)
-                    div(data-id="/article/" +article._id).bottom
-                        a.readmore(data-id="/article/" +article._id) More...
+                if article.fave
+                    div.child.fave(data-id="/article/" +article._id)
+                        div.inner(data-id="/article/" +article._id)
+                            a(data-id="/article/" +article._id)= article.title
+                            p(data-id="/article/" +article._id)!= article.body.replace(/\n/g, '<br />').substring(0, 400)
+                        
+                        div(data-id="/article/" +article._id).bottom
+                            a.readmore(data-id="/article/" +article._id) More...
+                else
+                    div.child(data-id="/article/" +article._id)
+                        div.inner(data-id="/article/" +article._id)
+                            a(data-id="/article/" +article._id)= article.title
+                            p(data-id="/article/" +article._id)!= article.body.replace(/\n/g, '<br />').substring(0, 400)
+                        
+                        div(data-id="/article/" +article._id).bottom
+                            a.readmore(data-id="/article/" +article._id) More...
         a.addbutton-hover(href='/articles/add/') +
             
 

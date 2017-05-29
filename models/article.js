@@ -9,6 +9,8 @@ let articleSchema = mongoose.Schema({
         type: String,
     },
     date:{
+    },
+    fave:{
     }
 });
 
