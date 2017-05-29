@@ -3,6 +3,7 @@ const path = require('path');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const moment = require('moment');
+var port = process.env.PORT || 8080;
 
 
 mongoose.connect('mongodb://localhost/nodekb');
@@ -132,6 +133,6 @@ app.delete('/article/:id', function(req, res){
 });
 
 // Start Server
-app.listen(process.env.PORT || 3000, function () {
-    console.log('server started on port 3000');
+app.listen(8080, function () {
+    console.log('server started on port 8080');
 });
