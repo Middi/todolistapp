@@ -273,7 +273,7 @@ ul {
   border: 1px solid #5995f0;
   text-align: center;
   line-height: 76px;
-  padding: 0 20px;
+  padding: 8px 20px 0px;
   max-width: 920px;
   margin: 0 auto;
   transition: all 0.3s ease; }
@@ -299,15 +299,12 @@ ul {
     text-decoration: none; }
 
 .deleteButton, .addButton, .addbutton-hover {
-  height: 39px;
-  width: 40px;
-  line-height: 38px;
+  line-height: 22px;
   background-color: rgba(251, 251, 251, 0);
   border: 0.5px solid rgba(72, 72, 72, 0.4);
   float: right;
   text-align: center;
   transition: all 0.4s ease;
-  margin: 18px 10px;
   font-size: 1rem; }
   .deleteButton:hover, .addButton:hover, .addbutton-hover:hover {
     background-color: #eeeeee;
@@ -319,8 +316,9 @@ ul {
   border-radius: 100%;
   margin: 0;
   float: none;
-  padding: 12px 17px; }
-  .addButton:hover .fa-plus, .addbutton-hover:hover .fa-plus {
+  padding: 3px 17px 4px;
+  font-size: 2.2rem; }
+  .addButton:hover, .addbutton-hover:hover {
     color: #5995f0;
     border-color: #5995f0; }
 

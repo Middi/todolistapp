@@ -4,8 +4,7 @@ block content
     div.todos
         ul#add
             li.top-li(data-id="/articles/add")
-                a.addButton(href='/articles/add/')
-                    i.fa.fa-plus(aria-hidden='true')
+                a.addButton(href='/articles/add/') +
         div#articles-ul
             each article, i in articles.reverse()
                 div.child(data-id="/article/" +article._id)
