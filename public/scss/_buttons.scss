@@ -92,17 +92,19 @@
      margin: 14px 10px;
      line-height: 1;
      clear: both;
-     border: 1px solid #ddd;
+     border: 1.2px solid #ddd;
      cursor: pointer;
-     transition: all 0.4s ease;
+     transition: all 0.5s ease;
      position: relative;
-     box-shadow: 4px 2px 2px 0 $shadow, 0 6px 16px 0 $shadow;
         p {
             padding-top: 24px;
         }
      &:hover {
-        //  box-shadow: 4px 2px 8px 2px $shadow, 0 6px 16px 2px $shadow;
-        transform: scale(1.006);
+
+         transform: scale(1.006);
+         -webkit-box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.6);
+-moz-box-shadow:    0px 0px 15px -3px rgba(0, 0, 0, 0.6);
+box-shadow:         0px 0px 15px -3px rgba(0, 0, 0, 0.6);
          }
  }
 
