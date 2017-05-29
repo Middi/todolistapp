@@ -5,9 +5,6 @@ let articleSchema = mongoose.Schema({
     title:{
         type: String,
     },
-    author:{
-        type: String,
-    },
     body:{
         type: String,
     },

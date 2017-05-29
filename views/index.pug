@@ -4,7 +4,7 @@ block content
     div.todos
         h1 #{title}
             ul
-                li.top-li
+                li.top-li(data-id="/articles/add")
                     a.addButton(href='/articles/add/')
                         i.fa.fa-plus(aria-hidden='true')
             ul#articles-ul

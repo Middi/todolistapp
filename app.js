@@ -76,7 +76,6 @@ app.get('/articles/add', function (req, res) {
 app.post('/articles/add', function(req, res){
     let article = new Article();
     article.title = req.body.title;
-    article.author = req.body.author;
     article.body = req.body.body;
     article.date = moment();
     article.save(function(err){
@@ -105,7 +104,6 @@ app.get('/article/edit/:id', function(req, res){
 app.post('/articles/edit/:id', function(req, res){
     let article = {};
     article.title = req.body.title;
-    article.author = req.body.author;
     article.body = req.body.body;
 
     let query = {_id:req.params.id};
