@@ -326,13 +326,15 @@ ul {
 
 .addbutton-hover {
   position: fixed;
-  right: 30px;
-  bottom: 30px;
+  right: 22px;
+  bottom: 26px;
   z-index: 100;
-  height: 65px;
-  width: 65px;
-  line-height: 52px;
-  display: none; }
+  height: 68px;
+  width: 68px;
+  line-height: 55px;
+  display: none;
+  border: none;
+  box-shadow: 2px 2px 8px 0 rgba(99, 99, 99, 0.5), 2px 2px 8px 0 rgba(99, 99, 99, 0.5); }
   .addbutton-hover .fa-plus {
     font-size: 2rem; }
 
