@@ -47,6 +47,12 @@
 		"oO": 0,
 		"oS": 1
 		},
+	"\/Procfile": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/Procfile",
+		"oF": 0
+		},
 	"\/public\/bower_components\/bootstrap\/.bower.json": {
 		"ft": 524288,
 		"oA": 2,

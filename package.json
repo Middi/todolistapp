@@ -1,5 +1,5 @@
 {
-  "name": "node-v2",
+  "name": "todolist",
   "version": "1.0.0",
   "description": "travesy media node tut",
   "main": "app.js",
@@ -17,5 +17,14 @@
   },
   "engines": {
     "node": "6.10.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Middi/knowledgebase.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Middi/knowledgebase/issues"
+  },
+  "homepage": "https://github.com/Middi/knowledgebase#readme"
 }
