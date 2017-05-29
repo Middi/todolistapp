@@ -136,5 +136,5 @@ app.delete('/article/:id', function(req, res){
 
 // Start Server
 app.listen(port, function () {
-    console.log('server started on port 8080');
+    console.log('server started on port 3000');
 });

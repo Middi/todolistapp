@@ -274,7 +274,7 @@ ul {
     text-decoration: none; }
 
 .addButton, .addbutton-hover {
-  border: 1px solid #fbfbfb;
+  border: 2px solid #fbfbfb;
   background-color: #5995f0;
   border-radius: 100%;
   margin: 0;
@@ -282,7 +282,8 @@ ul {
   padding: 2px 17px 4px;
   font-size: 2.2rem; }
   .addButton:hover, .addbutton-hover:hover {
-    color: #fbfbfb; }
+    color: #fbfbfb;
+    border: none; }
 
 .addbutton-hover {
   position: fixed;

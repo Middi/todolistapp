@@ -125,7 +125,7 @@
  }
 
  .addButton, .addbutton-hover {
-    border: 1px solid $white;
+    border: 2px solid $white;
     background-color: $brand;
      border-radius: 100%;
      margin: 0;
@@ -135,6 +135,7 @@
 
     &:hover {
               color: $white;
+              border: none;
          }
 }
 
