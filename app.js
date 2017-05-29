@@ -5,7 +5,6 @@ const bodyParser = require('body-parser');
 const moment = require('moment');
 var port = process.env.PORT || 8080;
 
-
 mongoose.connect('mongodb://localhost/nodekb');
 let dbb = mongoose.connection;
 
