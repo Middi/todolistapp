@@ -70,16 +70,17 @@
 }
 
  .top-li {
-     border: 1px solid $brand;
+     border: 2px solid $brand;
      text-align: center; 
      line-height: 76px;
      padding: 9px 0 0;
      max-width: 920px;
      margin: 0 auto;
+     cursor: pointer;
      transition: all 0.3s ease;
      
      &:hover {
-        background-color: $brand;
+        background-color: $white;
          }
 
      &:active {
@@ -116,23 +117,22 @@
      font-size: 1rem;
 
           &:hover {
-         background-color: darken($white, 5%);
+         background-color: darken($brand, 8%);
          text-decoration: none;
          }
  }
 
  .addButton, .addbutton-hover {
-    border: 0.5px solid $white;
+    border: 1px solid $white;
     background-color: $brand;
      border-radius: 100%;
      margin: 0;
      float: none;
-     padding: 3px 17px 4px;
+     padding: 2px 17px 4px;
      font-size: 2.2rem;
 
     &:hover {
-              color: $brand;
-              border-color: $brand;
+              color: $white;
          }
 }
 

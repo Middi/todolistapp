@@ -231,15 +231,16 @@ ul {
   font-weight: 400; }
 
 .top-li {
-  border: 1px solid #5995f0;
+  border: 2px solid #5995f0;
   text-align: center;
   line-height: 76px;
   padding: 9px 0 0;
   max-width: 920px;
   margin: 0 auto;
+  cursor: pointer;
   transition: all 0.3s ease; }
   .top-li:hover {
-    background-color: #5995f0; }
+    background-color: #fbfbfb; }
   .top-li:active {
     transform: scale(0.99); }
 
@@ -268,20 +269,19 @@ ul {
   transition: all 0.4s ease;
   font-size: 1rem; }
   .deleteButton:hover, .addButton:hover, .addbutton-hover:hover {
-    background-color: #eeeeee;
+    background-color: #347ded;
     text-decoration: none; }
 
 .addButton, .addbutton-hover {
-  border: 0.5px solid #fbfbfb;
+  border: 1px solid #fbfbfb;
   background-color: #5995f0;
   border-radius: 100%;
   margin: 0;
   float: none;
-  padding: 3px 17px 4px;
+  padding: 2px 17px 4px;
   font-size: 2.2rem; }
   .addButton:hover, .addbutton-hover:hover {
-    color: #5995f0;
-    border-color: #5995f0; }
+    color: #fbfbfb; }
 
 .addbutton-hover {
   position: fixed;
