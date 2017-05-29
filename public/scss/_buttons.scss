@@ -6,44 +6,6 @@
     margin-right: 8px;
 }
   
-.toggle-all {
-     height: 40px;
-     min-width: 40px;
-     margin: 0;
-     padding: 0;
-     background-color: inherit;
-     border: none;
-     border-top: 0.5px solid $grey;
-     border-bottom: 0.5px solid $grey;
-     border-left: 0.5px solid $grey;
-     float: left;
-
-     &:hover {background-color: darken($white, 5%);}
- }
- 
- .add-todo {
-     height: 40px;
-     max-width: 480px;
-     padding: 0;
-     margin: 10px auto;
-     display: flex;
- }
- 
- #addTodoTextInput {
-     width: 400px;
-     height: 40px;
-     margin: 0;
-     padding: 14px;
-     border: 0.5px solid $grey;
-     -webkit-appearance: none;
-     font-size: 1.2em;
-     font-family: "Open Sans";
-     font-weight: 400;
-     color: $brand;
-     float: left;
-     flex-shrink: 1;
-     border-radius: 0;
- }
  
  #add {
      display: block;

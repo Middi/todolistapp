@@ -82,12 +82,14 @@ h1 {
   color: rgba(0, 0, 0, 0.8);
   padding: 10px 0; }
 
-h2 {
+.logo a {
   font-size: 1.5em;
   font-family: "Open Sans";
   font-weight: 400;
-  color: rgba(0, 0, 0, 0.8); }
-  h2 span {
+  color: #fbfbfb; }
+  .logo a:hover {
+    text-decoration: none; }
+  .logo a span {
     color: rgba(0, 0, 0, 0.8);
     font-weight: 700; }
 
@@ -182,42 +184,6 @@ i {
 =============================================*/
 .btn {
   margin-right: 8px; }
-
-.toggle-all {
-  height: 40px;
-  min-width: 40px;
-  margin: 0;
-  padding: 0;
-  background-color: inherit;
-  border: none;
-  border-top: 0.5px solid rgba(72, 72, 72, 0.4);
-  border-bottom: 0.5px solid rgba(72, 72, 72, 0.4);
-  border-left: 0.5px solid rgba(72, 72, 72, 0.4);
-  float: left; }
-  .toggle-all:hover {
-    background-color: #eeeeee; }
-
-.add-todo {
-  height: 40px;
-  max-width: 480px;
-  padding: 0;
-  margin: 10px auto;
-  display: flex; }
-
-#addTodoTextInput {
-  width: 400px;
-  height: 40px;
-  margin: 0;
-  padding: 14px;
-  border: 0.5px solid rgba(72, 72, 72, 0.4);
-  -webkit-appearance: none;
-  font-size: 1.2em;
-  font-family: "Open Sans";
-  font-weight: 400;
-  color: #5995f0;
-  float: left;
-  flex-shrink: 1;
-  border-radius: 0; }
 
 #add {
   display: block; }
@@ -393,7 +359,6 @@ a {
   text-decoration: none; }
 
 header {
-  height: 56px;
   width: 100%;
   background: #5995f0;
   border-bottom: 1px solid #bbb;
@@ -404,9 +369,8 @@ header {
 
 nav {
   max-width: 920px;
-  height: 56px;
+  height: 46px;
   margin: 0 auto;
-  padding: 0 26px;
   display: flex;
   justify-content: center; }
 

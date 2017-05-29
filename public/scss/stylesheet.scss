@@ -26,7 +26,6 @@ body {
 a {text-decoration: none;}
 
 header {
-    height          : 56px;
     width           : 100%;
     background      : $brand;
     border-bottom   : 1px solid #bbb;
@@ -38,9 +37,8 @@ header {
 
 nav {
     max-width       : 920px;
-    height          : 56px;
+    height          : 46px;
     margin          : 0 auto;
-    padding         : 0 26px;
     display         : flex;
     justify-content : center;
 }
