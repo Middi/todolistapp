@@ -442,11 +442,6 @@ textarea, input {
   font-size: 1.1rem !important;
   line-height: 1.38 !important; }
 
-.readmore {
-  position: relative;
-  bottom: 2px;
-  right: 2px; }
-
 footer {
   height: 30px;
   width: 100%;
