@@ -21,10 +21,10 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Middi/knowledgebase.git"
+    "url": "git+https://github.com/Middi/todolistapp.git"
   },
   "bugs": {
-    "url": "https://github.com/Middi/knowledgebase/issues"
+    "url": "https://github.com/Middi/todolistapp/issues"
   },
-  "homepage": "https://github.com/Middi/knowledgebase#readme"
+  "homepage": "https://github.com/Middi/todolistapp#readme"
 }
