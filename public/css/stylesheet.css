@@ -334,6 +334,9 @@ li {
 form {
   padding-top: 20px; }
 
+textarea {
+  font-size: 22px !important; }
+
 input:focus,
 input[type]:focus,
 textarea:focus {
@@ -355,6 +358,15 @@ input:hover::-moz-placeholder {
 input:hover:-ms-input-placeholder {
   color: rgba(72, 72, 72, 0.4);
   transition: all 0.6s ease; }
+
+html {
+  position: relative;
+  min-height: 100%; }
+
+body {
+  margin: 0 0 30px 0;
+  /* bottom = footer height */
+  padding: 0 0 25px; }
 
 * {
   box-sizing: border-box;
@@ -387,11 +399,7 @@ nav {
   align-self: center; }
 
 main {
-  margin-top: 60px;
-  margin-bottom: -32px; }
-
-main:after {
-  display: block; }
+  margin-top: 60px; }
 
 .container-main {
   max-width: 920px;
@@ -403,12 +411,12 @@ main:after {
 #todo-section, #article-section, #edit-section {
   margin: 30px auto;
   height: auto;
-  width: 520px;
+  max-width: 520px;
   padding: 30px 0 60px 0;
   background-color: white; }
 
 #article-section {
-  width: 660px; }
+  max-width: 760px; }
 
 .top-li {
   text-align: center;
@@ -416,16 +424,19 @@ main:after {
   .top-li a {
     color: #fbfbfb; }
 
+textarea, input {
+  font-size: 1.1rem !important;
+  line-height: 1.38 !important; }
+
 footer {
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 10px;
+  height: 30px;
   width: 100%;
   display: table;
   text-align: center;
-  position: fixed;
-  background: #5995f0; }
+  position: absolute;
+  background: #5995f0;
+  bottom: 0;
+  overflow: hidden; }
 
 .built {
   color: white;
@@ -433,11 +444,14 @@ footer {
   vertical-align: middle; }
 
 footer p {
-  font-size: 1em; }
+  font-size: 0.8em;
+  font-family: "Open Sans"; }
 
 .built a,
 strong {
-  font-weight: 500; }
+  font-family: "Open Sans";
+  font-weight: 500;
+  font-size: 0.96em; }
   .built a:hover,
   strong:hover {
     text-decoration: underline; }
