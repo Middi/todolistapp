@@ -82,7 +82,7 @@
 
  
 .child {
-     height: 450px;
+     max-height: 450px;
      width: 450px;
      padding: 24px 32px 52px;
      background-color: white;
@@ -95,6 +95,7 @@
      border: 1px solid #ddd;
      cursor: pointer;
      transition: all 0.4s ease;
+     position: relative;
      box-shadow: 4px 2px 2px 0 $shadow, 0 6px 16px 0 $shadow;
         p {
             padding-top: 24px;
@@ -106,9 +107,21 @@
  }
 
  .inner {
-    height: 380px;
+    max-height: 380px;
   overflow: hidden;
  }
+
+.bottom {
+    position: absolute;
+    bottom: 6px;
+    right: 14px;
+}
+
+.child .readmore {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
  .top-li {
      border: 1px solid $brand;
      text-align: center; 

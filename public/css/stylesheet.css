@@ -248,7 +248,7 @@ ul {
   justify-content: center; }
 
 .child {
-  height: 450px;
+  max-height: 450px;
   width: 450px;
   padding: 24px 32px 52px;
   background-color: white;
@@ -261,6 +261,7 @@ ul {
   border: 1px solid #ddd;
   cursor: pointer;
   transition: all 0.4s ease;
+  position: relative;
   box-shadow: 4px 2px 2px 0 rgba(99, 99, 99, 0.3), 0 6px 16px 0 rgba(99, 99, 99, 0.3); }
   .child p {
     padding-top: 24px; }
@@ -268,8 +269,17 @@ ul {
     transform: scale(1.006); }
 
 .inner {
-  height: 380px;
+  max-height: 380px;
   overflow: hidden; }
+
+.bottom {
+  position: absolute;
+  bottom: 6px;
+  right: 14px; }
+
+.child .readmore {
+  font-size: 1rem;
+  font-weight: 400; }
 
 .top-li {
   border: 1px solid #5995f0;
@@ -431,6 +441,11 @@ main {
 textarea, input {
   font-size: 1.1rem !important;
   line-height: 1.38 !important; }
+
+.readmore {
+  position: relative;
+  bottom: 2px;
+  right: 2px; }
 
 footer {
   height: 30px;
