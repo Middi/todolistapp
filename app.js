@@ -7,15 +7,15 @@ var port = process.env.PORT || 8080;
 
 
 mongoose.connect('mongodb://localhost/nodekb');
-let db = mongoose.connection;
+let dbb = mongoose.connection;
 
 // Check Connection
-db.once('open', function () {
+dbb.once('open', function () {
     console.log('Connected to MongoDB');
 });
 
 // Check for DB Errors
-db.on('error', function () {
+dbb.on('error', function () {
     console.log(err);
 });
 
