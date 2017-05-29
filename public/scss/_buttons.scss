@@ -45,23 +45,8 @@
      border-radius: 0;
  }
  
- #add-button {
-     height: 40px;
-     min-width: 42px;
-     margin: 0;
-     padding: 0;
-     background-color: inherit;
-     border: none;
-     border-top: 0.5px solid $grey;
-     border-bottom: 0.5px solid $grey;
-     border-right: 0.5px solid $grey;
-     float: right;
-     transition: all 0.4s ease;
-
-     &:hover {
-         background-color: darken($white, 5%);
-         text-decoration: none;
-         }
+ #add {
+     display: block;
  }
  
  .todos {
@@ -160,7 +145,7 @@
          }
  }
  
- .deleteButton, .addButton {
+ .deleteButton, .addButton, .addbutton-hover {
      height: 39px;
      width: 40px;
      line-height: 38px;
@@ -178,8 +163,9 @@
          }
  }
 
- .addButton {
+ .addButton, .addbutton-hover {
     border: 0.5px solid $white;
+    background-color: $brand;
      border-radius: 100%;
      margin: 0;
      float: none;
@@ -189,6 +175,21 @@
               color: $brand;
               border-color: $brand;
          }
+}
+
+.addbutton-hover {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    z-index: 100;
+    height: 65px;
+    width: 65px;
+    line-height: 52px;
+    display: none;
+    .fa-plus {
+        font-size: 2rem;
+    }
+
 }
 
 .fa-plus {

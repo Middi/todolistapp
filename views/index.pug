@@ -2,7 +2,7 @@ extends layout
 
 block content
     div.todos
-        ul
+        ul#add
             li.top-li(data-id="/articles/add")
                 a.addButton(href='/articles/add/')
                     i.fa.fa-plus(aria-hidden='true')
@@ -14,5 +14,7 @@ block content
                         p(data-id="/article/" +article._id)!= article.body.replace(/\n/g, '<br />').substring(0, 400)
                     div(data-id="/article/" +article._id).bottom
                         a.readmore(data-id="/article/" +article._id) More...
+        a.addbutton-hover(href='/articles/add/')
+            i.fa.fa-plus(aria-hidden='true')
 
                     
