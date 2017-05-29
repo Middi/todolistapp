@@ -54,19 +54,19 @@ p {
   font-size: 1.3rem;
   line-height: 1.58; }
 
-li p, li p a {
+.child p, .child p a {
   font-family: 'Lora', serif;
   font-weight: 400;
   font-size: 1.1rem;
   line-height: 1.58; }
 
-li p a {
+.child p a {
   text-decoration: none;
   position: relative; }
-  li p a:hover {
+  .child p a:hover {
     text-decoration: none; }
 
-li p a:after {
+.child p a:after {
   content: '';
   width: 100%;
   position: absolute;
@@ -98,14 +98,14 @@ h5 {
   color: rgba(0, 0, 0, 0.8);
   padding: 0px 0 32px; }
 
-li a {
-  font-size: 1.8em;
+.child a {
+  font-size: 1.5em;
   color: rgba(0, 0, 0, 0.8);
   line-height: 1;
   font-family: "Open Sans";
   font-weight: 600; }
 
-li a:hover {
+.child a:hover {
   text-decoration: underline;
   color: rgba(0, 0, 0, 0.8); }
 
@@ -242,38 +242,45 @@ ul {
   list-style: none;
   margin-bottom: 20px; }
 
-li {
-  height: auto;
-  max-width: 660px;
+#articles-ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.child {
+  height: 450px;
+  width: 450px;
   padding: 24px 32px 52px;
   background-color: white;
   font-size: 1em;
   font-family: "Open Sans";
   font-weight: 400;
-  margin: 6px auto;
+  margin: 14px 10px;
   line-height: 1;
   clear: both;
   border: 1px solid #ddd;
   cursor: pointer;
   transition: all 0.4s ease;
   box-shadow: 4px 2px 2px 0 rgba(99, 99, 99, 0.3), 0 6px 16px 0 rgba(99, 99, 99, 0.3); }
-  li p {
+  .child p {
     padding-top: 24px; }
-  li:hover {
+  .child:hover {
     transform: scale(1.006); }
 
-#articles-ul {
-  margin-bottom: 200px; }
+.inner {
+  height: 380px;
+  overflow: hidden; }
 
 .top-li {
   border: 1px solid #5995f0;
   text-align: center;
   line-height: 76px;
   padding: 0 20px;
+  max-width: 920px;
+  margin: 0 auto;
   transition: all 0.3s ease; }
   .top-li:hover {
-    background-color: #5995f0;
-    transform: none; }
+    background-color: #5995f0; }
   .top-li:active {
     transform: scale(0.99); }
 
@@ -333,9 +340,6 @@ li {
 
 form {
   padding-top: 20px; }
-
-textarea {
-  font-size: 22px !important; }
 
 input:focus,
 input[type]:focus,
@@ -416,7 +420,7 @@ main {
   background-color: white; }
 
 #article-section {
-  max-width: 760px; }
+  max-width: 690px; }
 
 .top-li {
   text-align: center;

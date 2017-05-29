@@ -15,14 +15,14 @@ p {
     line-height: 1.58;
 }
 
-li p, li p a {
+.child p, .child p a {
     font-family: 'Lora', serif;
     font-weight: 400;
     font-size: 1.1rem;
     line-height: 1.58;
 }
 
-li p a {
+.child p a {
     text-decoration: none;
     position: relative;
 
@@ -31,7 +31,7 @@ li p a {
     }
 }
 
-li p a:after {
+.child p a:after {
     content: '';
 
     width: 100%;
@@ -70,15 +70,15 @@ h5 {
     padding: 0px 0 32px;
 }
 
-li a {
-    font-size: 1.8em;
+.child a {
+    font-size: 1.5em;
     color: $black;
     line-height: 1;
     font-family: "Open Sans";
     font-weight: 600;
 }
 
-li a:hover {
+.child a:hover {
     text-decoration: underline;
     color: $black;
     }

@@ -72,16 +72,24 @@
      list-style: none;
      margin-bottom: 20px;
  }
+
+
+#articles-ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
  
- li {
-     height: auto;
-     max-width: 660px;
+.child {
+     height: 450px;
+     width: 450px;
      padding: 24px 32px 52px;
      background-color: white;
      font-size: 1em;
      font-family: "Open Sans";
      font-weight: 400;
-     margin: 6px auto;
+     margin: 14px 10px;
      line-height: 1;
      clear: both;
      border: 1px solid #ddd;
@@ -96,19 +104,22 @@
         transform: scale(1.006);
          }
  }
-#articles-ul {
-     margin-bottom: 200px;
-}
+
+ .inner {
+    height: 380px;
+  overflow: hidden;
+ }
  .top-li {
      border: 1px solid $brand;
      text-align: center; 
      line-height: 76px;
      padding: 0 20px;
+     max-width: 920px;
+     margin: 0 auto;
      transition: all 0.3s ease;
      
      &:hover {
         background-color: $brand;
-        transform: none;
          }
 
      &:active {
@@ -188,10 +199,7 @@
      padding-top: 20px;
  }
 
-textarea
-{
-    font-size: 22px!important;
-}
+
  
  // Input styles
  input:focus,

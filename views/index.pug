@@ -6,10 +6,11 @@ block content
             li.top-li(data-id="/articles/add")
                 a.addButton(href='/articles/add/')
                     i.fa.fa-plus(aria-hidden='true')
-        ul#articles-ul
+        div#articles-ul
             each article, i in articles.reverse()
-                li(data-id="/article/" +article._id)
-                    a(data-id="/article/" +article._id)= article.title
-                    p(data-id="/article/" +article._id)!= article.body.replace(/\n/g, '<br />')
+                div.child(data-id="/article/" +article._id)
+                    div.inner
+                        a(data-id="/article/" +article._id)= article.title
+                        p(data-id="/article/" +article._id)!= article.body.replace(/\n/g, '<br />')
 
                     

@@ -22,7 +22,7 @@ $(document).ready(function(){
         window.document.location = $(this).data("href");
     });
 
-    $('li').on('click', function(e){
+    $('.child').on('click', function(e){
         $target = $(e.target);
         const id = $target.attr('data-id');
         window.location.href = id;
