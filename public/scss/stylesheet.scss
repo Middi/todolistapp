@@ -1,6 +1,6 @@
 @import "normalise";
 @import "colors";
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Lora:400,700|Open+Sans:300,400,700');
 @import "typography";
 @import "modals";
 @import "buttons";
@@ -58,20 +58,16 @@ main:after {
 }
 
 
-#todo-section {
-    margin          : 0 auto;
+#todo-section, #article-section, #edit-section {
+    margin          : 30px auto;
     height          : auto;
-    width           : 600px;
+    width           : 520px;
     padding         : 30px 0 60px 0;
     background-color: white;
-    border          : 1px solid #ddd;
-    cursor          : pointer;
-    box-shadow      : 0 4px 8px 0 $shadow, 0 6px 16px 0 $shadow;
 }
 
-
-#edit-section {
-    margin-top      : 50px;
+#article-section {
+    width: 660px;
 }
 
 .top-li {

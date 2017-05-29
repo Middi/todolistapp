@@ -2,13 +2,14 @@ extends layout
 
 block content
     div.todos
-        h1 #{title}
-            ul
-                li.top-li(data-id="/articles/add")
-                    a.addButton(href='/articles/add/')
-                        i.fa.fa-plus(aria-hidden='true')
-            ul#articles-ul
-                each article, i in articles.reverse()
-                    li(data-id="/article/" +article._id)
-                        a(data-id="/article/" +article._id)= article.title
-                        p(data-id="/article/" +article._id)= article.body
+        ul
+            li.top-li(data-id="/articles/add")
+                a.addButton(href='/articles/add/')
+                    i.fa.fa-plus(aria-hidden='true')
+        ul#articles-ul
+            each article, i in articles.reverse()
+                li(data-id="/article/" +article._id)
+                    a(data-id="/article/" +article._id)= article.title
+                    p(data-id="/article/" +article._id)!= article.body.replace(/\n/g, '<br />')
+
+                    

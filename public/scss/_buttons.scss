@@ -2,6 +2,9 @@
 =                 FORM STYLES                 =
 =============================================*/
 
+.btn {
+    margin-right: 8px;
+}
   
 .toggle-all {
      height: 40px;
@@ -72,20 +75,22 @@
  
  li {
      height: auto;
-     max-width: 500px;
-     padding: 0 20px 32px;
+     max-width: 660px;
+     padding: 24px 32px 52px;
      background-color: white;
      font-size: 1em;
      font-family: "Open Sans";
      font-weight: 400;
      margin: 6px auto;
-     line-height: 80px;
+     line-height: 1;
      clear: both;
      border: 1px solid #ddd;
      cursor: pointer;
      transition: all 0.4s ease;
      box-shadow: 4px 2px 2px 0 $shadow, 0 6px 16px 0 $shadow;
-
+        p {
+            padding-top: 24px;
+        }
      &:hover {
         //  box-shadow: 4px 2px 8px 2px $shadow, 0 6px 16px 2px $shadow;
         transform: scale(1.006);
@@ -166,7 +171,22 @@
     color: $white;
 }
  
- #changeTodoPositionInput {width: 40px;}
+ .btn-blue {
+     background-color: $brand;
+     color: $white;   
+     transition: all 0.4s ease; 
+     border: 2px solid $brand;
+     font-weight: 600;
+     &:hover {
+              color: $brand;
+              background-color: darken($white, 1);
+         }
+ }
+
+
+ form {
+     padding-top: 20px;
+ }
  
  // Input styles
  input:focus,

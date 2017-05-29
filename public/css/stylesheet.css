@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700");
+@import url("https://fonts.googleapis.com/css?family=Lora:400,700|Open+Sans:300,400,700");
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -45,42 +45,72 @@ input, select {
 =                 TYPOGRAPHY                  =
 =============================================*/
 * {
-  color: #262626;
+  color: rgba(0, 0, 0, 0.8);
   font-family: "Open Sans"; }
 
 p {
-  font-family: "Open Sans";
-  font-weight: 300;
-  font-size: 1rem;
-  line-height: 1.4; }
+  font-family: 'Lora', serif;
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 1.58; }
+
+li p, li p a {
+  font-family: 'Lora', serif;
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 1.58; }
+
+li p a {
+  text-decoration: none;
+  position: relative; }
+  li p a:hover {
+    text-decoration: none; }
+
+li p a:after {
+  content: '';
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 1px;
+  border-width: 0 0 1px;
+  border-style: solid; }
 
 h1 {
-  font-size: 1.5em;
+  font-size: 2em;
   font-family: "Open Sans";
-  font-weight: 200;
-  color: #fbfbfb; }
-  h1 span {
-    color: #262626;
-    font-weight: 700; }
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.8);
+  padding: 10px 0; }
 
 h2 {
   font-size: 1.5em;
   font-family: "Open Sans";
-  font-weight: 200;
-  color: #262626;
-  padding-bottom: 20px;
-  text-align: center; }
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.8); }
   h2 span {
-    color: #262626;
+    color: rgba(0, 0, 0, 0.8);
     font-weight: 700; }
 
-a {
+h5 {
   font-size: 1em;
-  color: #262626; }
+  font-family: "Open Sans";
+  font-weight: 200;
+  color: rgba(0, 0, 0, 0.8);
+  padding: 0px 0 32px; }
 
-a:hover {
+li a {
+  font-size: 1.8em;
+  color: rgba(0, 0, 0, 0.8);
+  line-height: 1;
+  font-family: "Open Sans";
+  font-weight: 600; }
+
+li a:hover {
   text-decoration: underline;
-  color: #262626; }
+  color: rgba(0, 0, 0, 0.8); }
+
+label {
+  padding: 8px 0; }
 
 .built a,
 strong {
@@ -91,7 +121,7 @@ strong {
   transition: all 0.6s ease; }
 
 i {
-  color: #262626; }
+  color: rgba(0, 0, 0, 0.8); }
 
 .fa-heart {
   font-size: 12px;
@@ -118,8 +148,8 @@ i {
   left: 0;
   right: 0;
   background: #fbfbfb;
-  color: #262626;
-  border: 1px solid #262626;
+  color: rgba(0, 0, 0, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
   text-align: center;
   padding: 120px;
   z-index: 10; }
@@ -150,6 +180,9 @@ i {
 /*=============================================
 =                 FORM STYLES                 =
 =============================================*/
+.btn {
+  margin-right: 8px; }
+
 .toggle-all {
   height: 40px;
   min-width: 40px;
@@ -211,19 +244,21 @@ ul {
 
 li {
   height: auto;
-  max-width: 500px;
-  padding: 0 20px 32px;
+  max-width: 660px;
+  padding: 24px 32px 52px;
   background-color: white;
   font-size: 1em;
   font-family: "Open Sans";
   font-weight: 400;
   margin: 6px auto;
-  line-height: 80px;
+  line-height: 1;
   clear: both;
   border: 1px solid #ddd;
   cursor: pointer;
   transition: all 0.4s ease;
   box-shadow: 4px 2px 2px 0 rgba(99, 99, 99, 0.3), 0 6px 16px 0 rgba(99, 99, 99, 0.3); }
+  li p {
+    padding-top: 24px; }
   li:hover {
     transform: scale(1.006); }
 
@@ -286,8 +321,18 @@ li {
 .fa-plus {
   color: #fbfbfb; }
 
-#changeTodoPositionInput {
-  width: 40px; }
+.btn-blue {
+  background-color: #5995f0;
+  color: #fbfbfb;
+  transition: all 0.4s ease;
+  border: 2px solid #5995f0;
+  font-weight: 600; }
+  .btn-blue:hover {
+    color: #5995f0;
+    background-color: #f8f8f8; }
+
+form {
+  padding-top: 20px; }
 
 input:focus,
 input[type]:focus,
@@ -355,18 +400,15 @@ main:after {
   padding: 20px 0;
   text-align: center; }
 
-#todo-section {
-  margin: 0 auto;
+#todo-section, #article-section, #edit-section {
+  margin: 30px auto;
   height: auto;
-  width: 600px;
+  width: 520px;
   padding: 30px 0 60px 0;
-  background-color: white;
-  border: 1px solid #ddd;
-  cursor: pointer;
-  box-shadow: 0 4px 8px 0 rgba(99, 99, 99, 0.3), 0 6px 16px 0 rgba(99, 99, 99, 0.3); }
+  background-color: white; }
 
-#edit-section {
-  margin-top: 50px; }
+#article-section {
+  width: 660px; }
 
 .top-li {
   text-align: center;

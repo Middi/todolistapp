@@ -27,4 +27,8 @@ $(document).ready(function(){
         const id = $target.attr('data-id');
         window.location.href = id;
     });
+
+    $("textarea").focus();
+    
+
 });
