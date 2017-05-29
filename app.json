@@ -1,0 +1,6 @@
+{
+  "name": "ToDo List",
+  "description": "A nodeJS todo list app, using MongoDB, Express and Pug",
+  "website": "http://richardmiddleton.me",
+  "repository": "https://github.com/Middi/knowledgebase"
+}
