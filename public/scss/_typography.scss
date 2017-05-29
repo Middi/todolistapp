@@ -9,45 +9,82 @@
 }
 
 p {
-    font-family: "Open Sans";
-    font-weight: 300;
-    font-size: 1rem;
-    line-height: 1.4;
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height: 1.58;
+}
+
+li p, li p a {
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 1.58;
+}
+
+li p a {
+    text-decoration: none;
+    position: relative;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+li p a:after {
+    content: '';
+
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+
+    border-width: 0 0 1px;
+    border-style: solid;
 }
 
 h1 {
-    font-size: 1.5em;
+    font-size: 2em;
     font-family: "Open Sans";
-    font-weight: 200;
-    color: $white;
-    span {
-        color: $black;
-        font-weight: 700;
-    }
+    font-weight: 700;
+    color: $black;
+    padding: 10px 0;
 }
 
 h2 {
     font-size: 1.5em;
     font-family: "Open Sans";
-    font-weight: 200;
+    font-weight: 400;
     color: $black;
-    padding-bottom: 20px;
-    text-align: center;
     span {
         color: $black;
         font-weight: 700;
     }
 }
 
-a {
+h5 {
     font-size: 1em;
+    font-family: "Open Sans";
+    font-weight: 200;
     color: $black;
+    padding: 0px 0 32px;
 }
 
+li a {
+    font-size: 1.8em;
+    color: $black;
+    line-height: 1;
+    font-family: "Open Sans";
+    font-weight: 600;
+}
 
-a:hover {
+li a:hover {
     text-decoration: underline;
     color: $black;
+    }
+
+    label {
+        padding: 8px 0;
     }
 
 .built a,
