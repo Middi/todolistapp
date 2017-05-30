@@ -1,18 +1,41 @@
 extends layout
 
 block content
-    #todo-section
-        h1 #{title}
-        form(method='POST', action='/articles/add')
-            #form-group
-                label Title:
-                input.form-control(name='title', type='text')
-            #form-group
-                label Body:
-                textarea.form-control(name='body' rows='10')
-            br
-            .checkbox
-                label
-                    input(type="checkbox", name="check", value="false" onclick="$(this).attr('value', this.checked ? 1 : 0)")
-                    |  Favourite?
-            input.btn.btn-blue(type='submit',value='Submit')
+    .form
+        .row
+            .col-xs-12.col-sm-8.col-md-6.col-sm-offset-2.col-md-offset-3
+                h1 Add Article
+                hr.colorgraph
+                form(method='POST', action='/articles/add')
+                    .row
+                        .col-xs-12.col-sm-6.col-md-6
+                        .form-group
+                            input#title.form-control.input-lg(type='text', name='title', placeholder="Title", tabindex='1')
+                    .row
+                        .col-xs-12.col-sm-6.col-md-6
+                        .form-group
+                            textarea.form-control(name='body', placeholder="Body",tabindex='2', rows='10')
+                    .row
+                        input(type="checkbox", name="check", tabindex='3', value="false", onclick="$(this).attr('value', this.checked ? 1 : 0)")
+                        |  Favourite?
+                    hr.colorgraph
+                    .row
+                        .col-xs-12.col-md-6
+                        input.btn.btn-blue.btn-block.btn-lg(type='submit', value='Submit', tabindex='4')
+
+
+    //- #todo-section
+    //-     h1 #{title}
+    //-     form(method='POST', action='/articles/add')
+    //-         #form-group
+    //-             label Title:
+    //-             input.form-control(name='title', type='text')
+    //-         #form-group
+    //-             label Body:
+    //-             textarea.form-control(name='body' rows='10')
+    //-         br
+    //-         .checkbox
+    //-             label
+    //-                 input(type="checkbox", name="check", value="false" onclick="$(this).attr('value', this.checked ? 1 : 0)")
+    //-                 |  Favourite?
+    //-         input.btn.btn-blue(type='submit',value='Submit')

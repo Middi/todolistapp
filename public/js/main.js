@@ -28,6 +28,6 @@ $(document).ready(function(){
         window.location.href = id;
     });
 
-    $("textarea").focus();
+    // $("textarea").focus();
 
 });
