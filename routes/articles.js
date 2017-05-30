@@ -34,7 +34,7 @@ router.post('/add', function (req, res) {
         let article = new Article();
         article.title = req.body.title;
         article.body = req.body.body;
-        article.date = new Date();
+        article.date = moment();
         article.fave = req.body.check;
 
         article.save(function (err) {
