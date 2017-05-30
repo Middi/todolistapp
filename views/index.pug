@@ -8,21 +8,21 @@ block content
         div#articles-ul
             each article, i in articles.reverse()
                 if article.fave
-                    div.child.fave(data-id="/article/" +article._id)
-                        div.inner(data-id="/article/" +article._id)
-                            a(data-id="/article/" +article._id)= article.title
-                            p(data-id="/article/" +article._id)!= article.body.replace(/\n/g, '<br />').substring(0, 400)
+                    div.child.fave(data-id="/articles/" +article._id)
+                        div.inner(data-id="/articles/" +article._id)
+                            a(data-id="/articles/" +article._id)= article.title
+                            p(data-id="/articles/" +article._id)!= article.body.replace(/\n/g, '<br />').substring(0, 400)
                         
-                        div(data-id="/article/" +article._id).bottom
-                            a.readmore(data-id="/article/" +article._id) More...
+                        div(data-id="/articles/" +article._id).bottom
+                            a.readmore(data-id="/articles/" +article._id) More...
                 else
-                    div.child(data-id="/article/" +article._id)
-                        div.inner(data-id="/article/" +article._id)
-                            a(data-id="/article/" +article._id)= article.title
-                            p(data-id="/article/" +article._id)!= article.body.replace(/\n/g, '<br />').substring(0, 400)
+                    div.child(data-id="/articles/" +article._id)
+                        div.inner(data-id="/articles/" +article._id)
+                            a(data-id="/articles/" +article._id)= article.title
+                            p(data-id="/articles/" +article._id)!= article.body.replace(/\n/g, '<br />').substring(0, 400)
                         
-                        div(data-id="/article/" +article._id).bottom
-                            a.readmore(data-id="/article/" +article._id) More...
+                        div(data-id="/articles/" +article._id).bottom
+                            a.readmore(data-id="/articles/" +article._id) More...
         a.addbutton-hover(href='/articles/add/') +
             
 

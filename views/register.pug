@@ -1,0 +1,22 @@
+extends layout
+
+block content
+    #todo-section
+        h1 register
+        form(method='POST', action='/users/register')
+            #form-group
+                label Name:
+                    input.form-control(name='name', nodtype='text')
+            #form-group
+                label Username
+                    input(name="username" type="text")
+            #form-group
+                label Email
+                    input(name="email" type="text")
+            #form-group
+                label Password
+                    input(name="password" type="password")
+            #form-group
+                label Confirm Password
+                    input(name="password2" type="password")
+            input.btn.btn-blue(type='submit',value='Submit')
