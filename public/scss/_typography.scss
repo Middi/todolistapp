@@ -13,6 +13,8 @@ p {
     font-weight: 400;
     font-size: 1.3rem;
     line-height: 1.58;
+    word-break: break-word;
+    word-wrap: break-word;
 }
 
 .child p, .child p a {

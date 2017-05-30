@@ -3,6 +3,7 @@ extends layout
 block content
     #article-section
         h1= article.title
+        hr.colorgraph
         h5= date
         p!= article.body.replace(/\n/g, '<br />')
         hr
