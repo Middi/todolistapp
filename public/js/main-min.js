@@ -1,1 +1,34 @@
-$(document).ready(function(){$(".delete-article").on("click",function(t){$target=$(t.target);const o=$target.attr("data-id");console.log(o),$.ajax({type:"DELETE",url:"/articles/"+o,success:function(t){alert("Deleting Article"),window.location.href="/"},error:function(t){console.log(t)}})}),$(".table-row").click(function(){window.document.location=$(this).data("href")}),$(".child").on("click",function(t){$target=$(t.target);const o=$target.attr("data-id");window.location.href=o}),$("textarea").focus()});
+$(document).ready(function(){
+    $('.delete-article').on('click', function(e){
+        $target = $(e.target);
+        const id = $target.attr('data-id');
+        console.log(id);
+
+        $.ajax({
+            type: 'DELETE',
+            url: '/articles/'+id,
+            success: function(response){
+                alert('Deleting Article');
+                window.location.href='/';
+            },
+            error: function(err){
+                console.log(err);
+            }
+        });
+    });
+
+
+    $(".table-row").click(function() {
+        window.document.location = $(this).data("href");
+    });
+
+    $('.child').on('click', function(e){
+        $target = $(e.target);
+        const id = $target.attr('data-id');
+        window.location.href = id;
+    });
+
+    $("textarea").focus();
+
+});
+
