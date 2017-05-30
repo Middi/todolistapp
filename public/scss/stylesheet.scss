@@ -23,7 +23,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
     }
 
-a {text-decoration: none;}
+a {text-decoration: none}
 
 .navbar {
     min-height: 48px;
@@ -99,6 +99,10 @@ main {
     text-align      : center;
 }
 
+.form {
+    margin: 20px auto 100px;
+    width: 80%;
+}
 
 #todo-section, #article-section, #edit-section {
     margin          : 30px auto;
