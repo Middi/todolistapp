@@ -42,18 +42,16 @@ a {text-decoration: none;}
 .container-nav {
     max-width: 920px;
     margin : 0 auto;
+    
+    padding: 0 20px;
 }
 
-.navbar-default .navbar-nav ul {
-    padding: 10px;
-}
 .navbar-default .navbar-nav li a {
     font-family: "Open Sans";
     color: $white;
-    padding: 16px 28px;
 }
-.navbar-default .navbar-toggle {
 
+.navbar-default .navbar-toggle {
     
     &:hover{
     background-color: desaturate(darken($brand, 7%), 5);
@@ -63,13 +61,17 @@ a {text-decoration: none;}
     }
 }
 
+
+.collapsing ul li, .in ul li {
+    padding: 8px 14px;
+    }
+
 button .navbar-toggle .collapsed {
     border-color: $white;
     margin-top: 0;
     background-color: none;
-    
-
 }
+
 .navbar-default .navbar-toggle .icon-bar {
     background-color: $white;
 }
@@ -81,7 +83,7 @@ button .navbar-toggle .collapsed {
     box-shadow: none;
 }
 
-.logo { margin: 13px;}
+.logo { margin: 13px 0;}
 
 // --- CONTENT AREA --- //
 main {

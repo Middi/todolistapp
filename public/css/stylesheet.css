@@ -369,21 +369,21 @@ a {
 
 .container-nav {
   max-width: 920px;
-  margin: 0 auto; }
-
-.navbar-default .navbar-nav ul {
-  padding: 10px; }
+  margin: 0 auto;
+  padding: 0 20px; }
 
 .navbar-default .navbar-nav li a {
   font-family: "Open Sans";
-  color: #fbfbfb;
-  padding: 16px 28px; }
+  color: #fbfbfb; }
 
 .navbar-default .navbar-toggle:hover {
   background-color: #3e81e8; }
 
 .navbar-default .navbar-toggle:focus {
   background-color: #4e85d7; }
+
+.collapsing ul li, .in ul li {
+  padding: 8px 14px; }
 
 button .navbar-toggle .collapsed {
   border-color: #fbfbfb;
@@ -400,7 +400,7 @@ button .navbar-toggle .collapsed {
   box-shadow: none; }
 
 .logo {
-  margin: 13px; }
+  margin: 13px 0; }
 
 main {
   margin-top: 60px; }
