@@ -368,9 +368,6 @@ body {
   -moz-font-smoothing: antialiased !important;
   text-rendering: optimizelegibility !important; }
 
-a {
-  text-decoration: none; }
-
 .navbar {
   min-height: 48px; }
 
