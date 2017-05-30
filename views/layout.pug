@@ -7,12 +7,26 @@ html
         link(rel='stylesheet' href='/bower_components/components-font-awesome/css/font-awesome.css')
         link(rel='stylesheet' href='/css/stylesheet.css')
     body
-        header
-            nav
-                h2.logo
-                    a(href='/')
-                        span Todo
-                        |List
+        nav.navbar.navbar-default.navbar-fixed-top
+            .container-nav
+                .navbar-header
+                    button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
+                        span.sr-only Toggle navigation
+                        span.icon-bar
+                        span.icon-bar
+                        span.icon-bar
+                    h2.logo
+                        a(href='/')
+                            span Todo
+                            |List
+                #navbar.collapse.navbar-collapse
+                    ul.nav.navbar-nav.navbar-right
+                        li
+                            a(href='/') Home
+                        li
+                            a(href='/users/login') Login
+                        li  
+                            a(href='/users/register') Register
         main
             .container
                 != messages('message', locals)
@@ -28,4 +42,5 @@ html
                 a(href='http://www.richardmiddleton.me')
                     strong RICHARD MIDDLETON
         script(src='/bower_components/jquery/dist/jquery.js')
+        script(src='/bower_components/bootstrap/dist/js/bootstrap.js')
         script(src='/js/main.js')
