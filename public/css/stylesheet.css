@@ -355,35 +355,52 @@ body {
 a {
   text-decoration: none; }
 
+.navbar {
+  min-height: 46px; }
+
 .navbar-default {
   width: 100%;
-  height: 46px;
   background: #5995f0;
-  border-bottom: 1px solid #bbb;
-  box-shadow: 0 2px 6px -4px #999;
+  border: none;
+  box-shadow: none;
   position: fixed;
   top: 0;
   z-index: 10; }
 
 .container-nav {
   max-width: 920px;
-  height: 46px;
   margin: 0 auto;
   padding: 0 20px; }
 
 .navbar-default .navbar-nav li a {
   font-family: "Open Sans";
-  color: #fbfbfb; }
+  color: #fbfbfb;
+  padding-top: 10px; }
+
+.navbar-default .navbar-toggle {
+  margin-top: 6px;
+  padding: 9px; }
+  .navbar-default .navbar-toggle:hover {
+    background-color: #3e81e8; }
+  .navbar-default .navbar-toggle:focus {
+    background-color: #4e85d7; }
 
 button .navbar-toggle .collapsed {
   border-color: #fbfbfb;
-  margin-top: 0; }
+  margin-top: 0;
+  background-color: none; }
 
 .navbar-default .navbar-toggle .icon-bar {
   background-color: #fbfbfb; }
 
+.navbar-collapse {
+  background-color: #5995f0;
+  padding: 0;
+  border-top: none;
+  box-shadow: none; }
+
 .logo {
-  margin: 12px 0; }
+  margin: 9px 0; }
 
 main {
   margin-top: 60px; }
