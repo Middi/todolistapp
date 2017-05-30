@@ -380,7 +380,7 @@ a {
 .container-nav {
   max-width: 920px;
   margin: 0 auto;
-  padding: 0 20px; }
+  padding: 0 0; }
 
 .navbar-default .navbar-nav li a {
   font-family: "Open Sans";
@@ -410,7 +410,7 @@ button .navbar-toggle .collapsed {
   box-shadow: none; }
 
 .logo {
-  margin: 13px 0; }
+  margin: 13px 16px; }
 
 main {
   margin-top: 60px; }

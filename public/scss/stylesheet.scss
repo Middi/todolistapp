@@ -28,6 +28,7 @@ a {text-decoration: none;}
 .navbar {
     min-height: 48px;
 }
+
 .navbar-default {
     width           : 100%;
     background      : $brand;
@@ -42,8 +43,7 @@ a {text-decoration: none;}
 .container-nav {
     max-width: 920px;
     margin : 0 auto;
-    
-    padding: 0 20px;
+    padding: 0 0;
 }
 
 .navbar-default .navbar-nav li a {
@@ -83,7 +83,7 @@ button .navbar-toggle .collapsed {
     box-shadow: none;
 }
 
-.logo { margin: 13px 0;}
+.logo { margin: 13px 16px;}
 
 // --- CONTENT AREA --- //
 main {
