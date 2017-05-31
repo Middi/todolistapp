@@ -43,6 +43,8 @@
      cursor: pointer;
      transition: all 0.5s ease;
      position: relative;
+     background: url('/images/star-stroke.png'); background-position: top 8px right 8px;background-size: 32px 32px;
+   background-repeat: no-repeat;
         p {
             padding-top: 24px;
         }

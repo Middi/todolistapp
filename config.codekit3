@@ -3458,6 +3458,17 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"\/public\/images\/star-stroke.png": {
+		"ft": 32768,
+		"iS": 19085,
+		"oA": 0,
+		"oAP": "\/public\/images\/star-stroke.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"\/public\/images\/star.png": {
 		"ft": 32768,
 		"iS": 8701,
@@ -3583,6 +3594,15 @@
 		"oF": 2,
 		"oS": 0,
 		"uL": 1
+		},
+	"\/routes\/articles-min.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 0,
+		"oAP": "\/routes\/articles-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
 		},
 	"\/routes\/articles.js": {
 		"ft": 64,
