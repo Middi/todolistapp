@@ -551,11 +551,10 @@ strong {
   .container {
     margin: 0;
     padding: 0; }
-  #add {
+  .addHome {
     display: none; }
   .addbutton-hover {
-    display: block;
-    background-color: #5995f0; }
+    display: block; }
   #article-section {
     margin: 10px auto;
     padding: 0 18px 60px; }
