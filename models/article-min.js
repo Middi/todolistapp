@@ -18,3 +18,4 @@ let articleSchema = mongoose.Schema({
 });
 
 let Article = module.exports = mongoose.model('Article', articleSchema);
+

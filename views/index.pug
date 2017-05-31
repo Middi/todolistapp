@@ -3,8 +3,12 @@ extends layout
 block content
     div.todos
         ul#add
-            li.top-li(data-id="/articles/add")
-                a.addButton(href='/articles/add/') +
+            if user
+                li.top-li(data-id="/articles/add")
+                    a.addButton(href='/articles/add/') +
+            else
+                li.top-li(data-id="/users/login")
+                    a.addButton(href='/users/login') +
         div#articles-ul
             each article, i in articles.reverse()
                 if article.fave

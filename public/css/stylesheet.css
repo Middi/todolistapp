@@ -92,6 +92,13 @@ h1 {
   color: rgba(0, 0, 0, 0.8);
   padding: 10px 0; }
 
+h3 {
+  font-size: 1em;
+  font-family: "Open Sans";
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.8);
+  padding: 0 0 10px 0; }
+
 .logo a {
   font-size: 1.5em;
   font-family: "Open Sans";
@@ -462,6 +469,16 @@ textarea, input {
   background-position: top 8px right 8px;
   background-size: 32px 32px;
   background-repeat: no-repeat; }
+
+.alert-error {
+  color: #a94442;
+  background-color: #f2dede;
+  border-color: #ebccd1; }
+
+.alert-success_message {
+  color: #3c763d;
+  background-color: #dff0d8;
+  border-color: #d6e9c6; }
 
 footer {
   height: 30px;

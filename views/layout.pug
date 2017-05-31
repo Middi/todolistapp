@@ -23,10 +23,14 @@ html
                     ul.nav.navbar-nav.navbar-right
                         li
                             a(href='/') Home
-                        li
-                            a(href='/users/login') Login
-                        li  
-                            a(href='/users/register') Register
+                        if user
+                            li 
+                                a(href='/users/logout') #{user.username}
+                        else
+                            li
+                                a(href='/users/login') Login
+                            li  
+                                a(href='/users/register') Register
         main
             .container
                 != messages('message', locals)

@@ -21,6 +21,15 @@
 		"oAP": "\/.gitignore",
 		"oF": 0
 		},
+	"\/app-min.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 0,
+		"oAP": "\/app-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"\/app.js": {
 		"ft": 64,
 		"mi": 0,
@@ -37,6 +46,42 @@
 		"oF": 0,
 		"oO": 0,
 		"oS": 1
+		},
+	"\/config\/database-min.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 0,
+		"oAP": "\/config\/database-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/config\/database.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 0,
+		"oAP": "\/config\/database-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/config\/passport-min.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 0,
+		"oAP": "\/config\/passport-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/config\/passport.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 0,
+		"oAP": "\/config\/passport-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
 		},
 	"\/models\/article.js": {
 		"ft": 64,
@@ -3609,6 +3654,15 @@
 		"mi": 0,
 		"oA": 0,
 		"oAP": "\/routes\/articles-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/routes\/users-min.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 0,
+		"oAP": "\/routes\/users-min-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
