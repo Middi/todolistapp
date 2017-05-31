@@ -349,7 +349,8 @@ ul {
   border: none;
   box-shadow: 2px 2px 8px 0 rgba(99, 99, 99, 0.5), 2px 2px 8px 0 rgba(99, 99, 99, 0.5);
   font-size: 3rem;
-  color: #fbfbfb; }
+  color: #fbfbfb;
+  background-color: #5995f0; }
 
 .fa-plus {
   color: #fbfbfb; }
@@ -553,7 +554,8 @@ strong {
   #add {
     display: none; }
   .addbutton-hover {
-    display: block; }
+    display: block;
+    background-color: #5995f0; }
   #article-section {
     margin: 10px auto;
     padding: 0 18px 60px; }
