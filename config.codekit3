@@ -83,6 +83,15 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"\/models\/article-min.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 0,
+		"oAP": "\/models\/article-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"\/models\/article.js": {
 		"ft": 64,
 		"mi": 0,
@@ -3502,6 +3511,17 @@
 		"oAP": "\/public\/css\/stylesheet-min.css",
 		"oF": 0,
 		"oS": 0
+		},
+	"\/public\/images\/add.png": {
+		"ft": 32768,
+		"iS": 19051,
+		"oA": 0,
+		"oAP": "\/public\/images\/add.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
 		},
 	"\/public\/images\/star-stroke.png": {
 		"ft": 32768,

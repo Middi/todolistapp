@@ -28,6 +28,13 @@ $(document).ready(function(){
         window.location.href = id;
     });
 
+
+    $('.addHome').on('click', function(e){
+        $target = $(e.target);
+        const id = $target.attr('data-id');
+        window.location.href = id;
+    });
+
     // $("textarea").focus();
 
 });

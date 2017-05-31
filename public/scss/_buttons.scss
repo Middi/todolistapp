@@ -91,6 +91,20 @@
          transform: scale(0.99);
          }
  }
+
+ .addHome {
+     text-align: center;
+     background: url('/images/add.png'); background-position: center center;
+     background-color: $brand;
+     background-size: 45px 45px;
+     background-repeat: no-repeat;
+
+     &:hover {
+
+     margin: 14px 10px;
+         background-color: saturate(darken($brand, 10%),10%);
+     }
+ }
  
  .editButton {
      height: 39px;
@@ -110,6 +124,19 @@
          text-decoration: none;
          }
  }
+
+ .add-div{
+     margin-top: 12px;
+     display: table;
+     width: 100%;
+     height: 100%;
+ }
+ .bttn {
+    width: 40px;
+    height: 40px;
+     display: table-cell;
+     vertical-align: middle;
+ }
  
  .deleteButton, .addButton, .addbutton-hover {
      line-height: 22px;
@@ -126,18 +153,21 @@
          }
  }
 
- .addButton, .addbutton-hover {
+ .child .addButton, .addbutton-hover {
     border: 2px solid $white;
-    background-color: $brand;
+    background-color: none;
      border-radius: 100%;
-     margin: 0;
+     width: 40px;
+     height: 40px;
+     margin: 0 auto;
      float: none;
      padding: 2px 17px 4px;
      font-size: 2.2rem;
+     color: $white;
 
     &:hover {
-              color: $white;
-              border: none;
+         text-decoration: none;
+         color: $white;
          }
 }
 
