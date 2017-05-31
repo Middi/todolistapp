@@ -100,8 +100,6 @@
      background-repeat: no-repeat;
 
      &:hover {
-
-     margin: 14px 10px;
          background-color: saturate(darken($brand, 10%),10%);
      }
  }
