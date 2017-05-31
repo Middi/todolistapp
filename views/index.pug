@@ -4,7 +4,7 @@ block content
     div.todos
         div#articles-ul
             if user
-                div.child(data-id="/articles/add")
+                div.child.addHome(data-id="/articles/add")
                     a.add-div(href='/articles/add')
             else
                 div.child.addHome(data-id='/users/login')
