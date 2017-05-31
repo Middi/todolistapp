@@ -25,7 +25,9 @@ html
                             a(href='/') Home
                         if user
                             li 
-                                a(href='/users/logout') #{user.username}
+                                a(href='/users/logout') Logout
+                            li
+                                a(href='/')= user.username
                         else
                             li
                                 a(href='/users/login') Login
