@@ -148,6 +148,9 @@ textarea, input {
     border-color: #d6e9c6;
 }
 
+#todo-section .options {
+margin: 0 0 0 15px;
+}
 
 .options > label > input {
     visibility: hidden;
@@ -155,7 +158,7 @@ textarea, input {
 
 .options > label {
     display: inline-block;
-    margin: 0 0 0 -10px;
+    margin: 0 0 0 -15px;
     padding: 20px 20px 20px 0;
     
 }
@@ -213,6 +216,13 @@ textarea, input {
 }
 .orange-body {
      background-color: $orange-fave;
+     &:hover {
+         background-color: rgba( $orange-fave, 1 );
+     }
+}
+
+.plain-body {
+     background-color: $white;
      &:hover {
          background-color: rgba( $orange-fave, 1 );
      }

@@ -16,18 +16,22 @@ block content
                     input(type="checkbox", name="check", tabindex='3', value="0", onclick="$(this).attr('value', this.checked ? 1 : 0)")
                     |  Favourite?
             .row
-                .options
-                    label(title='red')
-                        input(id='red', type='radio', name='color', value='0', onclick="$(this).attr('value', this.checked ? 1 : 0)")
-                        img#red 
-                    label(title='green')
-                        input(id='green', type='radio', name='color', value='0', onclick="$(this).attr('value', this.checked ? 2 : 0)")
-                        img#green
-                    label(title='blue')
-                        input(id='blue', type='radio', name='color', value='0', onclick="$(this).attr('value', this.checked ? 3 : 0)")
-                        img#blue
-                    label(title='orange')
-                        input(id='orange', type='radio', name='color', value='0', onclick="$(this).attr('value', this.checked ? 4 : 0)")
-                        img#orange
+                .form-group
+                    .options
+                        label(title='plain')
+                            input(id='plain', type='radio', name='color', value='0', onclick="$(this).attr('value', this.checked ? 5 : 0)")
+                            img#plain 
+                        label(title='red')
+                            input(id='red', type='radio', name='color', value='0', onclick="$(this).attr('value', this.checked ? 1 : 0)")
+                            img#red 
+                        label(title='green')
+                            input(id='green', type='radio', name='color', value='0', onclick="$(this).attr('value', this.checked ? 2 : 0)")
+                            img#green
+                        label(title='blue')
+                            input(id='blue', type='radio', name='color', value='0', onclick="$(this).attr('value', this.checked ? 3 : 0)")
+                            img#blue
+                        label(title='orange')
+                            input(id='orange', type='radio', name='color', value='0', onclick="$(this).attr('value', this.checked ? 4 : 0)")
+                            img#orange
 
             input.btn.btn-primary(type='submit',value='Submit')

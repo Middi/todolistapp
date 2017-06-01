@@ -503,12 +503,15 @@ textarea, input {
   background-color: #dff0d8;
   border-color: #d6e9c6; }
 
+#todo-section .options {
+  margin: 0 0 0 15px; }
+
 .options > label > input {
   visibility: hidden; }
 
 .options > label {
   display: inline-block;
-  margin: 0 0 0 -10px;
+  margin: 0 0 0 -15px;
   padding: 20px 20px 20px 0; }
 
 .options > label > img {
@@ -553,6 +556,11 @@ textarea, input {
 .orange-body {
   background-color: rgba(255, 152, 0, 0.8); }
   .orange-body:hover {
+    background-color: #ff9800; }
+
+.plain-body {
+  background-color: #fbfbfb; }
+  .plain-body:hover {
     background-color: #ff9800; }
 
 footer {
