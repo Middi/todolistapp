@@ -166,8 +166,14 @@ margin: 0 0 0 15px;
 .options > label > img {
     display: inline-block;
     padding: 0px;
-    min-height:24px;
-    min-width:24px;
+    height:24px;
+    width:24px;
+    &:hover {
+     background: url('/images/tick-hover.png');
+     background-position: center center;
+     background-size: 18px auto;
+     background-repeat: no-repeat;
+    }
 }
 
 .options > label > input:checked +img {  

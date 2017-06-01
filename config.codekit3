@@ -83,6 +83,15 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"\/models\/article-min.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 0,
+		"oAP": "\/models\/article-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"\/models\/article.js": {
 		"ft": 64,
 		"mi": 0,
@@ -3541,6 +3550,17 @@
 		"oA": 2,
 		"oAP": "\/public\/images\/star.psd",
 		"oF": 0
+		},
+	"\/public\/images\/tick-hover.png": {
+		"ft": 32768,
+		"iS": 15793,
+		"oA": 0,
+		"oAP": "\/public\/images\/tick-hover.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/public\/images\/tick.png": {
 		"ft": 32768,
