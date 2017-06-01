@@ -1,41 +1,43 @@
 extends layout
 
 block content
-    #todo-section
-        h1 #{title}
-        form(method='POST',action='/articles/edit/'+article._id)
-            #form-group
-                label Title:
-                input.form-control(name='title', type='text', value=article.title)
-            #form-group
-                label Body:
-                textarea.form-control(name='body' rows='10')= article.body
-            br
-            .checkbox
-                label
-                    if article.fave == 1
-                        input(type="checkbox", name="check", tabindex='3', value="0", checked="1" onclick="$(this).attr('value', this.checked ? 1 : 0)")
-                        |  Favourite?
-                    else
-                        input(type="checkbox", name="check", tabindex='3', onclick="$(this).attr('value', this.checked ? 1 : 0)")
-                        |  Favourite?
-            .row
-                .form-group
-                    .options
-                        label(title='plain')
-                            input(id='plain', type='radio', name='color', value='0', onclick="$(this).attr('value', this.checked ? 5 : 0)")
-                            img#plain 
-                        label(title='red')
-                            input(id='red', type='radio', name='color', value='0', onclick="$(this).attr('value', this.checked ? 1 : 0)")
-                            img#red 
-                        label(title='green')
-                            input(id='green', type='radio', name='color', value='0', onclick="$(this).attr('value', this.checked ? 2 : 0)")
-                            img#green
-                        label(title='blue')
-                            input(id='blue', type='radio', name='color', value='0', onclick="$(this).attr('value', this.checked ? 3 : 0)")
-                            img#blue
-                        label(title='orange')
-                            input(id='orange', type='radio', name='color', value='0', onclick="$(this).attr('value', this.checked ? 4 : 0)")
-                            img#orange
+    .form-edit
+        .row
+            .col-xs-12.col-sm-8.col-md-6.col-sm-offset-2.col-md-offset-3
+                h1 #{title}
+                form(method='POST',action='/articles/edit/'+article._id)
+                    #form-group
+                        label Title:
+                        input.form-control(name='title', type='text', value=article.title)
+                    #form-group
+                        label Body:
+                        textarea.form-control(name='body' rows='10')= article.body
+                    br
+                    .checkbox
+                        label
+                            if article.fave == 1
+                                input(type="checkbox", name="check", tabindex='3', value="0", checked="1" onclick="$(this).attr('value', this.checked ? 1 : 0)")
+                                |  Favourite?
+                            else
+                                input(type="checkbox", name="check", tabindex='3', onclick="$(this).attr('value', this.checked ? 1 : 0)")
+                                |  Favourite?
+                    .row
+                        .form-group
+                            .options
+                                label(title='plain')
+                                    input(id='plain', type='radio', name='color', value='0', onclick="$(this).attr('value', this.checked ? 5 : 0)")
+                                    img#plain 
+                                label(title='red')
+                                    input(id='red', type='radio', name='color', value='0', onclick="$(this).attr('value', this.checked ? 1 : 0)")
+                                    img#red 
+                                label(title='green')
+                                    input(id='green', type='radio', name='color', value='0', onclick="$(this).attr('value', this.checked ? 2 : 0)")
+                                    img#green
+                                label(title='blue')
+                                    input(id='blue', type='radio', name='color', value='0', onclick="$(this).attr('value', this.checked ? 3 : 0)")
+                                    img#blue
+                                label(title='orange')
+                                    input(id='orange', type='radio', name='color', value='0', onclick="$(this).attr('value', this.checked ? 4 : 0)")
+                                    img#orange
 
-            input.btn.btn-primary(type='submit',value='Submit')
+                    input.btn.btn-primary(type='submit',value='Submit')
