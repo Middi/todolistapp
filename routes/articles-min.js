@@ -37,6 +37,7 @@ router.post('/add', function (req, res) {
         article.author = req.user._id;
         article.date = moment();
         article.fave = req.body.check;
+        article.color = req.body.color;
 
         article.save(function (err) {
             if (err) {
@@ -72,6 +73,7 @@ router.post('/edit/:id', function (req, res) {
     article.body = req.body.body;
     article.date = moment();
     article.fave = req.body.check;
+    article.color = req.body.color;
 
     let query = { _id: req.params.id };
 

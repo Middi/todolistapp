@@ -130,8 +130,10 @@ textarea, input {
 }
 
 .fave {
-    background: url('/images/star.png'); background-position: top 8px right 8px;background-size: 32px 32px;
-   background-repeat: no-repeat;
+    background: url('/images/star.png');
+    background-position: top 8px right 8px;
+    background-size: 32px 32px;
+    background-repeat: no-repeat;
 }
 
 .alert-error {
@@ -146,6 +148,75 @@ textarea, input {
     border-color: #d6e9c6;
 }
 
+
+.options > label > input {
+    visibility: hidden;
+}
+
+.options > label {
+    display: inline-block;
+    margin: 0 0 0 -10px;
+    padding: 20px 20px 20px 0;
+    
+}
+
+.options > label > img {
+    display: inline-block;
+    padding: 0px;
+    min-height:24px;
+    min-width:24px;
+}
+
+.options > label > input:checked +img {  
+     background: url('/images/tick.png');
+     background-position: center center;
+     background-size: 18px auto;
+     background-repeat: no-repeat;
+}
+
+.options > label > #red {
+     background-color: $red-fave;
+}
+
+.options > label > #green {
+     background-color: $green-fave;
+}
+
+.options > label > #blue {
+     background-color: $blue-fave;
+}
+
+.options > label > #orange {
+     background-color: $orange-fave;
+}
+
+
+// Artice styles 
+
+.red-body {
+     background-color: $red-fave;
+     &:hover {
+         background-color: rgba( $red-fave, 1 );
+     }
+}
+.green-body {
+     background-color: $green-fave;
+     &:hover {
+         background-color: rgba( $green-fave, 1 );
+     }
+}
+.blue-body {
+     background-color: $blue-fave;
+     &:hover {
+         background-color: rgba( $blue-fave, 1 );
+     }
+}
+.orange-body {
+     background-color: $orange-fave;
+     &:hover {
+         background-color: rgba( $orange-fave, 1 );
+     }
+}
 
 // ---- Footer ---- //
 footer {

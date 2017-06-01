@@ -231,11 +231,7 @@ ul {
   border: 1.2px solid #ddd;
   cursor: pointer;
   transition: all 0.5s ease;
-  position: relative;
-  background: url("/images/star-stroke.png");
-  background-position: top 8px right 8px;
-  background-size: 32px 32px;
-  background-repeat: no-repeat; }
+  position: relative; }
   .child p {
     padding-top: 24px; }
   .child:hover {
@@ -505,6 +501,58 @@ textarea, input {
   color: #3c763d;
   background-color: #dff0d8;
   border-color: #d6e9c6; }
+
+.options > label > input {
+  visibility: hidden; }
+
+.options > label {
+  display: inline-block;
+  margin: 0 0 0 -10px;
+  padding: 20px 20px 20px 0; }
+
+.options > label > img {
+  display: inline-block;
+  padding: 0px;
+  min-height: 24px;
+  min-width: 24px; }
+
+.options > label > input:checked + img {
+  background: url("/images/tick.png");
+  background-position: center center;
+  background-size: 18px auto;
+  background-repeat: no-repeat; }
+
+.options > label > #red {
+  background-color: rgba(244, 67, 54, 0.8); }
+
+.options > label > #green {
+  background-color: rgba(139, 195, 74, 0.8); }
+
+.options > label > #blue {
+  background-color: rgba(3, 169, 244, 0.8); }
+
+.options > label > #orange {
+  background-color: rgba(255, 152, 0, 0.8); }
+
+.red-body {
+  background-color: rgba(244, 67, 54, 0.8); }
+  .red-body:hover {
+    background-color: #f44336; }
+
+.green-body {
+  background-color: rgba(139, 195, 74, 0.8); }
+  .green-body:hover {
+    background-color: #8bc34a; }
+
+.blue-body {
+  background-color: rgba(3, 169, 244, 0.8); }
+  .blue-body:hover {
+    background-color: #03a9f4; }
+
+.orange-body {
+  background-color: rgba(255, 152, 0, 0.8); }
+  .orange-body:hover {
+    background-color: #ff9800; }
 
 footer {
   height: 30px;

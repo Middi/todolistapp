@@ -83,15 +83,6 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"\/models\/article-min.js": {
-		"ft": 64,
-		"mi": 0,
-		"oA": 0,
-		"oAP": "\/models\/article-min-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
 	"\/models\/article.js": {
 		"ft": 64,
 		"mi": 0,
@@ -3551,14 +3542,16 @@
 		"oAP": "\/public\/images\/star.psd",
 		"oF": 0
 		},
-	"\/public\/js\/main-min.js": {
-		"ft": 64,
-		"mi": 0,
+	"\/public\/images\/tick.png": {
+		"ft": 32768,
+		"iS": 16612,
 		"oA": 0,
-		"oAP": "\/public\/js\/main-min-min.js",
+		"oAP": "\/public\/images\/tick.png",
 		"oF": 0,
-		"sC": 3,
-		"tS": 0
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
 		},
 	"\/public\/js\/main.js": {
 		"ft": 64,
@@ -3674,15 +3667,6 @@
 		"mi": 0,
 		"oA": 0,
 		"oAP": "\/routes\/articles-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/routes\/users-min.js": {
-		"ft": 64,
-		"mi": 0,
-		"oA": 0,
-		"oAP": "\/routes\/users-min-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0

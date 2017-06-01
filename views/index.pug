@@ -11,21 +11,98 @@ block content
                     a.add-div(href='/users/login')
             each article, i in articles.reverse()
                 if article.fave
-                    div.child.fave(data-id="/articles/" +article._id)
-                        div.inner(data-id="/articles/" +article._id)
-                            a(data-id="/articles/" +article._id)= article.title
-                            p(data-id="/articles/" +article._id)!= article.body.replace(/\n/g, '<br />').substring(0, 400)
+                    case article.color
+                        when 1
+                            div.child.fave.red-body(data-id="/articles/" +article._id)
+                                div.inner(data-id="/articles/" +article._id)
+                                    a(data-id="/articles/" +article._id)= article.title
+                                    p(data-id="/articles/" +article._id)!= article.body.replace(/\n/g, '<br />').substring(0, 400)
+                            
+                            div(data-id="/articles/" +article._id).bottom
+                                a.readmore(data-id="/articles/" +article._id) More...
+                           
+                        when 2 
+                            div.child.fave.green-body(data-id="/articles/" +article._id)
+                                div.inner(data-id="/articles/" +article._id)
+                                    a(data-id="/articles/" +article._id)= article.title
+                                    p(data-id="/articles/" +article._id)!= article.body.replace(/\n/g, '<br />').substring(0, 400)
+                            
+                            div(data-id="/articles/" +article._id).bottom
+                                a.readmore(data-id="/articles/" +article._id) More...
+
+                        when 3 
+                            div.child.fave.blue-body(data-id="/articles/" +article._id)
+                                div.inner(data-id="/articles/" +article._id)
+                                    a(data-id="/articles/" +article._id)= article.title
+                                    p(data-id="/articles/" +article._id)!= article.body.replace(/\n/g, '<br />').substring(0, 400)
+                            
+                            div(data-id="/articles/" +article._id).bottom
+                                a.readmore(data-id="/articles/" +article._id) More...
                         
-                        div(data-id="/articles/" +article._id).bottom
-                            a.readmore(data-id="/articles/" +article._id) More...
+                        when 4 
+                            div.child.fave.orange-body(data-id="/articles/" +article._id)
+                                div.inner(data-id="/articles/" +article._id)
+                                    a(data-id="/articles/" +article._id)= article.title
+                                    p(data-id="/articles/" +article._id)!= article.body.replace(/\n/g, '<br />').substring(0, 400)
+                            
+                            div(data-id="/articles/" +article._id).bottom
+                                a.readmore(data-id="/articles/" +article._id) More...
+
+                        default
+                            div.child.fave(data-id="/articles/" +article._id)
+                                div.inner(data-id="/articles/" +article._id)
+                                    a(data-id="/articles/" +article._id)= article.title
+                                    p(data-id="/articles/" +article._id)!= article.body.replace(/\n/g, '<br />').substring(0, 400)
+                                
+                                div(data-id="/articles/" +article._id).bottom
+                                    a.readmore(data-id="/articles/" +article._id) More...
                 else
-                    div.child(data-id="/articles/" +article._id)
-                        div.inner(data-id="/articles/" +article._id)
-                            a(data-id="/articles/" +article._id)= article.title
-                            p(data-id="/articles/" +article._id)!= article.body.replace(/\n/g, '<br />').substring(0, 400)
+                    case article.color
+                        when 1
+                            div.child.red-body(data-id="/articles/" +article._id)
+                                div.inner(data-id="/articles/" +article._id)
+                                    a(data-id="/articles/" +article._id)= article.title
+                                    p(data-id="/articles/" +article._id)!= article.body.replace(/\n/g, '<br />').substring(0, 400)
+                                
+                                div(data-id="/articles/" +article._id).bottom
+                                    a.readmore(data-id="/articles/" +article._id) More...
+                           
+                        when 2 
+                            div.child.green-body(data-id="/articles/" +article._id)
+                                div.inner(data-id="/articles/" +article._id)
+                                    a(data-id="/articles/" +article._id)= article.title
+                                    p(data-id="/articles/" +article._id)!= article.body.replace(/\n/g, '<br />').substring(0, 400)
+                            
+                                div(data-id="/articles/" +article._id).bottom
+                                    a.readmore(data-id="/articles/" +article._id) More...
+
+                        when 3 
+                            div.child.blue-body(data-id="/articles/" +article._id)
+                                div.inner(data-id="/articles/" +article._id)
+                                    a(data-id="/articles/" +article._id)= article.title
+                                    p(data-id="/articles/" +article._id)!= article.body.replace(/\n/g, '<br />').substring(0, 400)
+                            
+                                div(data-id="/articles/" +article._id).bottom
+                                    a.readmore(data-id="/articles/" +article._id) More...
                         
-                        div(data-id="/articles/" +article._id).bottom
-                            a.readmore(data-id="/articles/" +article._id) More...
+                        when 4 
+                            div.child.orange-body(data-id="/articles/" +article._id)
+                                div.inner(data-id="/articles/" +article._id)
+                                    a(data-id="/articles/" +article._id)= article.title
+                                    p(data-id="/articles/" +article._id)!= article.body.replace(/\n/g, '<br />').substring(0, 400)
+                            
+                                div(data-id="/articles/" +article._id).bottom
+                                    a.readmore(data-id="/articles/" +article._id) More...
+
+                        default
+                             div.child(data-id="/articles/" +article._id)
+                                div.inner(data-id="/articles/" +article._id)
+                                    a(data-id="/articles/" +article._id)= article.title
+                                    p(data-id="/articles/" +article._id)!= article.body.replace(/\n/g, '<br />').substring(0, 400)
+                                    
+                                div(data-id="/articles/" +article._id).bottom
+                                    a.readmore(data-id="/articles/" +article._id) More...
+
         a.addbutton-hover(href='/articles/add/') +
             
 
