@@ -88,6 +88,7 @@ app.get('*', function(req, res, next){
     next();
 })
 
+
 // Home Route
 app.get('/', function (req, res) {
     Article.find({}, function (err, articles) {

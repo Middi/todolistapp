@@ -102,9 +102,30 @@ block content
                                             a.readmore(data-id="/articles/" +article._id) More...
 
             else
-                div.child.addHome(data-id='/users/login')
-                    a.add-div(href='/users/login')
-        
+                .form
+                    .row
+                        .col-xs-12.col-sm-8.col-md-6.col-sm-offset-2.col-md-offset-3
+                            h1 Login
+                            hr.colorgraph
+                            form(method='POST', action='/users/login')
+                                .row
+                                    .col-xs-12.col-sm-6.col-md-6
+                                    .form-group
+                                        input#display_name.form-control.input-lg(type='text', name='username', placeholder='Username', tabindex='1')
+                                .row
+                                    .col-xs-12.col-sm-6.col-md-6
+                                    .form-group
+                                        input#password.form-control.input-lg(type='password', name='password', placeholder='Password', tabindex='2')
+                                hr.colorgraph
+                                .row
+                                    .col-xs-12.col-md-6
+                                    input.btn.btn-blue.btn-block.btn-lg(type='submit', value='Login', tabindex='3')
+                                    br
+                                .row
+                                    h4
+                                        | Not registered? click 
+                                        a(href='register')  here
+                    
         a.addbutton-hover(href='/articles/add/') +
             
 
