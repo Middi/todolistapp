@@ -12,7 +12,7 @@ block content
             each article, i in articles.reverse()
                 if article.fave
                     case article.color
-                        when 1
+                        when "1"
                             div.child.fave.red-body(data-id="/articles/" +article._id)
                                 div.inner(data-id="/articles/" +article._id)
                                     a(data-id="/articles/" +article._id)= article.title
@@ -21,7 +21,7 @@ block content
                             div(data-id="/articles/" +article._id).bottom
                                 a.readmore(data-id="/articles/" +article._id) More...
                            
-                        when 2 
+                        when "2" 
                             div.child.fave.green-body(data-id="/articles/" +article._id)
                                 div.inner(data-id="/articles/" +article._id)
                                     a(data-id="/articles/" +article._id)= article.title
@@ -30,7 +30,7 @@ block content
                             div(data-id="/articles/" +article._id).bottom
                                 a.readmore(data-id="/articles/" +article._id) More...
 
-                        when 3 
+                        when "3" 
                             div.child.fave.blue-body(data-id="/articles/" +article._id)
                                 div.inner(data-id="/articles/" +article._id)
                                     a(data-id="/articles/" +article._id)= article.title
@@ -39,7 +39,7 @@ block content
                             div(data-id="/articles/" +article._id).bottom
                                 a.readmore(data-id="/articles/" +article._id) More...
                         
-                        when 4 
+                        when "4" 
                             div.child.fave.orange-body(data-id="/articles/" +article._id)
                                 div.inner(data-id="/articles/" +article._id)
                                     a(data-id="/articles/" +article._id)= article.title
@@ -58,7 +58,7 @@ block content
                                     a.readmore(data-id="/articles/" +article._id) More...
                 else
                     case article.color
-                        when 1
+                        when "1"
                             div.child.red-body(data-id="/articles/" +article._id)
                                 div.inner(data-id="/articles/" +article._id)
                                     a(data-id="/articles/" +article._id)= article.title
@@ -67,7 +67,7 @@ block content
                                 div(data-id="/articles/" +article._id).bottom
                                     a.readmore(data-id="/articles/" +article._id) More...
                            
-                        when 2 
+                        when "2" 
                             div.child.green-body(data-id="/articles/" +article._id)
                                 div.inner(data-id="/articles/" +article._id)
                                     a(data-id="/articles/" +article._id)= article.title
@@ -76,7 +76,7 @@ block content
                                 div(data-id="/articles/" +article._id).bottom
                                     a.readmore(data-id="/articles/" +article._id) More...
 
-                        when 3 
+                        when "3" 
                             div.child.blue-body(data-id="/articles/" +article._id)
                                 div.inner(data-id="/articles/" +article._id)
                                     a(data-id="/articles/" +article._id)= article.title
@@ -85,7 +85,7 @@ block content
                                 div(data-id="/articles/" +article._id).bottom
                                     a.readmore(data-id="/articles/" +article._id) More...
                         
-                        when 4 
+                        when "4" 
                             div.child.orange-body(data-id="/articles/" +article._id)
                                 div.inner(data-id="/articles/" +article._id)
                                     a(data-id="/articles/" +article._id)= article.title

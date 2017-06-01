@@ -16,7 +16,6 @@ let articleSchema = mongoose.Schema({
     fave:{
     },
     color:{
-        type: Number,
     }
 });
 

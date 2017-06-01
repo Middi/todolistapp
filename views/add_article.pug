@@ -16,7 +16,7 @@ block content
                         .form-group
                             textarea.form-control(name='body', placeholder="Body",tabindex='2', rows='10')
                     .row
-                        input(type="checkbox", name="check", tabindex='3', value="false", onclick="$(this).attr('value', this.checked ? 1 : 0)")
+                        input(type="checkbox", name="check", tabindex='3', value="0", onclick="$(this).attr('value', this.checked ? 1 : 0)")
                         |  Favourite?
                     .row
                         .options
@@ -29,7 +29,7 @@ block content
                             label(title='blue')
                                 input(id='blue', type='radio', name='color', value='0', onclick="$(this).attr('value', this.checked ? 3 : 0)")
                                 img#blue
-                            label(title='blue')
+                            label(title='orange')
                                 input(id='orange', type='radio', name='color', value='0', onclick="$(this).attr('value', this.checked ? 4 : 0)")
                                 img#orange
                     .row
