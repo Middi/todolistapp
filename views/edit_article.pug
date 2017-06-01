@@ -13,8 +13,12 @@ block content
             br
             .checkbox
                 label
-                    input(type="checkbox", name="check", tabindex='3', value="0", onclick="$(this).attr('value', this.checked ? 1 : 0)")
-                    |  Favourite?
+                    if article.fave == 1
+                        input(type="checkbox", name="check", tabindex='3', value="0", checked="1" onclick="$(this).attr('value', this.checked ? 1 : 0)")
+                        |  Favourite?
+                    else
+                        input(type="checkbox", name="check", tabindex='3', onclick="$(this).attr('value', this.checked ? 1 : 0)")
+                        |  Favourite?
             .row
                 .form-group
                     .options
