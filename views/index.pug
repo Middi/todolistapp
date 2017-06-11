@@ -13,7 +13,7 @@ block content
                                 when "1"
                                     div.child.fave.red-body(data-id="/articles/" +article._id)
                                         div.inner(data-id="/articles/" +article._id)
-                                            a(data-id="/articles/" +article._id)= article.title
+                                            a= article.title
                                             p(data-id="/articles/" +article._id)!= article.body.replace(/\n/g, '<br />').substring(0, 400)
                                     
                                     div(data-id="/articles/" +article._id).bottom

@@ -2,12 +2,21 @@ const express = require('express');
 const router = express.Router();
 
 const moment = require('moment');
+const multer = require('multer');
+const upload = multer();
 
 //Bring in Article Models
 let Article = require('../models/article');
 
 // User Model
 let User = require('../models/user');
+
+// New route for posting with multer
+router.post('/upload', upload.single('avatar'), function(req, res) {
+    const formData = req.file
+    delete formData.buffer
+  res.send(formData)
+})
 
 // Add Route
 router.get('/add', ensureAuthenticated, function (req, res) {

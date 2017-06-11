@@ -6,7 +6,7 @@ block content
         hr.colorgraph
         h3 Written by #{author}
         h5= date
-        p!= article.body.replace(/\n/g, '<br />')
+        p !{article.body.replace(/\n/g, '<br />')}
         hr
         if user
             if user.id ==article.author

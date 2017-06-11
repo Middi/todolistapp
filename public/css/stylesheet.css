@@ -56,6 +56,10 @@ a {
 a, a:focus {
   text-decoration: none; }
 
+p strong {
+  color: rgba(0, 0, 0, 0.8) !important;
+  font-weight: 600; }
+
 p {
   font-family: 'Lora', serif;
   font-weight: 400;
@@ -131,11 +135,10 @@ h5 {
 label {
   padding: 8px 0; }
 
-.built a,
-strong {
+footer .built a {
   padding: 0;
   margin: 0;
-  color: white;
+  color: white !important;
   text-decoration: none;
   transition: all 0.6s ease; }
 
@@ -586,15 +589,6 @@ footer {
 footer p {
   font-size: 0.8em;
   font-family: "Open Sans"; }
-
-.built a,
-strong {
-  font-family: "Open Sans";
-  font-weight: 500;
-  font-size: 0.96em; }
-  .built a:hover,
-  strong:hover {
-    text-decoration: underline; }
 
 .fa-heart {
   font-size: 12px;
