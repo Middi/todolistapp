@@ -115,8 +115,11 @@ main {
     }
 }
 
-#article-section {
-    max-width: 690px;
+#article-section {max-width: 690px;
+img {
+    margin: 0 0 30px 0;
+    display: block;
+}
 }
 
 .top-li {

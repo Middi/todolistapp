@@ -247,6 +247,10 @@ ul {
 .inner {
   max-height: 380px;
   overflow: hidden; }
+  .inner img {
+    float: left;
+    max-height: 200px;
+    margin: 0 10px 10px 0; }
 
 .bottom {
   position: absolute;
@@ -479,6 +483,9 @@ main {
 
 #article-section {
   max-width: 690px; }
+  #article-section img {
+    margin: 0 0 30px 0;
+    display: block; }
 
 .top-li {
   text-align: center;

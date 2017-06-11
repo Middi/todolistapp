@@ -59,6 +59,11 @@
  .inner {
     max-height: 380px;
   overflow: hidden;
+  img {
+      float: left;
+      max-height: 200px;
+      margin: 0 10px 10px 0;
+  }
  }
 
 .bottom {
