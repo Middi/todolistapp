@@ -4,6 +4,7 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const moment = require('moment');
 const expressValidator = require('express-validator');
+const expressSanitizer = require("express-sanitizer");
 const flash = require('connect-flash');
 const session = require('express-session');
 const passport = require('passport');
@@ -43,6 +44,9 @@ app.use(bodyParser.json());
 
 // Set Public Folder
 app.use(express.static(path.join(__dirname, 'public')));
+
+// Sanitize inputs
+app.use(expressSanitizer());
 
 
 // Express Session Middleware
@@ -91,7 +95,7 @@ app.get('*', function(req, res, next){
 
 // Home Route
 app.get('/', function (req, res) {
-    Article.find({}, function (err, articles) {
+    Article.find({}).sort({date: -1}).exec(function(err, articles) {
         if (err) {
             console.log(err);
         }

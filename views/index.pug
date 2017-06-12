@@ -6,7 +6,7 @@ block content
             if user
                 div.child.addHome(data-id="/articles/add")
                     a.add-div(href='/articles/add')
-                each article, i in articles.reverse()
+                each article, i in articles
                     if user.id == article.author
                         if article.fave
                             case article.color
