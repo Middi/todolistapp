@@ -7,7 +7,7 @@
 		"uuidString": "C126F18B-EBA5-4559-9B27-888CD4391595"
 		}
 	],
-"creatorBuild": "25813",
+"creatorBuild": "25849",
 "files": {
 	"\/.bowerrc": {
 		"ft": 8192,
@@ -3573,6 +3573,15 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/public\/js\/main-min.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 0,
+		"oAP": "\/public\/js\/main-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"\/public\/js\/main.js": {
 		"ft": 64,
 		"mi": 0,
@@ -5651,6 +5660,7 @@
 		},
 	"languageDefaultsUserDefined": [
 		],
+	"overrideExternalServerCSS": 0,
 	"previewPathAddition": "",
 	"skippedFoldersString": "log, _logs, logs, _cache, cache, \/storage\/framework\/sessions, node_modules, \/views",
 	"sourceFolderName": "source",
