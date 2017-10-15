@@ -21,3 +21,7 @@ logs
 results
 build
 node_modules
+
+
+# API keys and secrets
+*.env
